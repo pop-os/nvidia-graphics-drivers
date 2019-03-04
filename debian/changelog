@@ -1,0 +1,56 @@
+nvidia-graphics-drivers-418 (418.43-0ubuntu0~gpu18.04.2) bionic; urgency=medium
+
+  * New upstream release
+
+ -- Michael Marley <michael@michaelmarley.com>  Fri, 22 Feb 2019 17:00:00 -0500
+
+nvidia-graphics-drivers-418 (418.30-0ubuntu0~gpu18.04.2) bionic; urgency=medium
+
+  *  debian/rules.defs:
+    - Add support for xserver-xorg-core-hwe-18.04 (LP: #1815579).
+
+ -- Michael Marley <michael@michaelmarley.com>  Fri, 15 Feb 2019 06:00:00 -0500
+
+nvidia-graphics-drivers-418 (418.30-0ubuntu0~gpu19.04.1) disco; urgency=medium
+
+  * New upstream release
+
+ -- Michael Marley <michael@michaelmarley.com>  Wed, 30 Jan 2019 17:00:00 -0500
+
+nvidia-graphics-drivers-415 (415.27-0ubuntu0~gpu19.04.1) disco; urgency=medium
+
+  * New upstream release
+
+ -- Michael Marley <michael@michaelmarley.com>  Tue, 15 Jan 2019 17:00:00 -0500
+
+nvidia-graphics-drivers-415 (415.25-0ubuntu0~gpu19.04.1) disco; urgency=medium
+
+  * New upstream release
+
+ -- Michael Marley <michael@michaelmarley.com>  Tue, 18 Dec 2018 17:00:00 -0500
+
+nvidia-graphics-drivers-415 (415.23-0ubuntu0~gpu19.04.1) disco; urgency=medium
+
+  * New upstream release
+
+ -- Michael Marley <michael@michaelmarley.com>  Wed, 12 Dec 2018 17:00:00 -0500
+
+nvidia-graphics-drivers-415 (415.22-0ubuntu0~gpu19.04.1) disco; urgency=medium
+
+  * New upstream release
+  * debian/rules:
+    - Prevent pkgbinarymangler from symlinking docs (LP: #1804738).
+
+ -- Michael Marley <michael@michaelmarley.com>  Fri, 07 Dec 2018 17:00:00 -0500
+
+nvidia-graphics-drivers-415 (415.18-0ubuntu0~gpu19.04.2) disco; urgency=medium
+
+  * New upstream release
+
+ -- Michael Marley <michael@michaelmarley.com>  Wed, 21 Nov 2018 17:00:00 -0500
+
+nvidia-graphics-drivers-410 (410.78-0ubuntu1) disco; urgency=medium
+
+  * Initial release.
+
+ -- Alberto Milone <alberto.milone@canonical.com>  Thu, 15 Nov 2018 18:16:22 +0100
