@@ -1,3 +1,9 @@
+nvidia-graphics-drivers-418 (418.43-0pop0) bionic; urgency=medium
+
+  * Updates for Pop!_OS compatibility
+
+ -- Jeremy Soller <jeremy@system76.com>  Mon, 04 Mar 2019 09:43:51 -0700
+
 nvidia-graphics-drivers-418 (418.43-0ubuntu0~gpu18.04.2) bionic; urgency=medium
 
   * New upstream release
