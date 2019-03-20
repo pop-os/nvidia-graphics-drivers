@@ -1,3 +1,9 @@
+nvidia-graphics-drivers-418 (418.56-0pop0) bionic; urgency=medium
+
+  * New driver release
+
+ -- Michael Aaron Murphy <michael@system76.com>  Wed, 20 Mar 2019 16:33:57 -0600
+
 nvidia-graphics-drivers-418 (418.43-0pop0) bionic; urgency=medium
 
   * Updates for Pop!_OS compatibility
