@@ -1,68 +1,35 @@
-nvidia-graphics-drivers-418 (418.56-0pop0) bionic; urgency=medium
+nvidia-graphics-drivers-418 (418.56-0ubuntu1pop0) disco; urgency=medium
 
-  * New driver release
+  * Apply Pop!_OS patches
 
- -- Michael Aaron Murphy <michael@system76.com>  Wed, 20 Mar 2019 16:33:57 -0600
+ -- Jeremy Soller <jeremy@system76.com>  Thu, 28 Mar 2019 09:08:01 -0600
 
-nvidia-graphics-drivers-418 (418.43-0pop0) bionic; urgency=medium
+nvidia-graphics-drivers-418 (418.56-0ubuntu1) disco; urgency=medium
 
-  * Updates for Pop!_OS compatibility
+    * New upstream release:
+      - Added support for the following GPU:
+          GeForce MX230
+          GeForce MX250
+      - Fixed a bug which could sometimes cause Vulkan applications
+        to lock up the     GPU when freeing large chunks of memory on
+        systems with PRIME enabled.
+      - Updated the driver to restrict use of the GPU performance
+        counters to system administrators by default. The previous
+        more permissive behavior can be restored by setting
+        NVreg_RestrictProfilingToAdminUsers=0 when loading nvidia.ko.
 
- -- Jeremy Soller <jeremy@system76.com>  Mon, 04 Mar 2019 09:43:51 -0700
+ -- Alberto Milone <alberto.milone@canonical.com>  Mon, 25 Mar 2019 17:01:55 +0100
 
-nvidia-graphics-drivers-418 (418.43-0ubuntu0~gpu18.04.2) bionic; urgency=medium
+nvidia-graphics-drivers-418 (418.43-0ubuntu2) disco; urgency=medium
 
-  * New upstream release
+  * debian/templates/control.in:
+    - Make transitional packages available on i386 too.
+    - Make libnvidia-common-410 arch "all".
 
- -- Michael Marley <michael@michaelmarley.com>  Fri, 22 Feb 2019 17:00:00 -0500
+ -- Alberto Milone <alberto.milone@canonical.com>  Tue, 19 Mar 2019 15:18:04 +0100
 
-nvidia-graphics-drivers-418 (418.30-0ubuntu0~gpu18.04.2) bionic; urgency=medium
+nvidia-graphics-drivers-418 (418.43-0ubuntu1) disco; urgency=medium
 
-  *  debian/rules.defs:
-    - Add support for xserver-xorg-core-hwe-18.04 (LP: #1815579).
+  * Initial release (replaces the 410 series).
 
- -- Michael Marley <michael@michaelmarley.com>  Fri, 15 Feb 2019 06:00:00 -0500
-
-nvidia-graphics-drivers-418 (418.30-0ubuntu0~gpu19.04.1) disco; urgency=medium
-
-  * New upstream release
-
- -- Michael Marley <michael@michaelmarley.com>  Wed, 30 Jan 2019 17:00:00 -0500
-
-nvidia-graphics-drivers-415 (415.27-0ubuntu0~gpu19.04.1) disco; urgency=medium
-
-  * New upstream release
-
- -- Michael Marley <michael@michaelmarley.com>  Tue, 15 Jan 2019 17:00:00 -0500
-
-nvidia-graphics-drivers-415 (415.25-0ubuntu0~gpu19.04.1) disco; urgency=medium
-
-  * New upstream release
-
- -- Michael Marley <michael@michaelmarley.com>  Tue, 18 Dec 2018 17:00:00 -0500
-
-nvidia-graphics-drivers-415 (415.23-0ubuntu0~gpu19.04.1) disco; urgency=medium
-
-  * New upstream release
-
- -- Michael Marley <michael@michaelmarley.com>  Wed, 12 Dec 2018 17:00:00 -0500
-
-nvidia-graphics-drivers-415 (415.22-0ubuntu0~gpu19.04.1) disco; urgency=medium
-
-  * New upstream release
-  * debian/rules:
-    - Prevent pkgbinarymangler from symlinking docs (LP: #1804738).
-
- -- Michael Marley <michael@michaelmarley.com>  Fri, 07 Dec 2018 17:00:00 -0500
-
-nvidia-graphics-drivers-415 (415.18-0ubuntu0~gpu19.04.2) disco; urgency=medium
-
-  * New upstream release
-
- -- Michael Marley <michael@michaelmarley.com>  Wed, 21 Nov 2018 17:00:00 -0500
-
-nvidia-graphics-drivers-410 (410.78-0ubuntu1) disco; urgency=medium
-
-  * Initial release.
-
- -- Alberto Milone <alberto.milone@canonical.com>  Thu, 15 Nov 2018 18:16:22 +0100
+ -- Alberto Milone <alberto.milone@canonical.com>  Wed, 13 Mar 2019 12:19:04 +0100

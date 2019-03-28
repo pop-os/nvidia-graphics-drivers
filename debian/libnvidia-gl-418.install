@@ -1,5 +1,5 @@
 NVIDIA-Linux/libnvidia-glcore.so.418.56               usr/lib/x86_64-linux-gnu
-NVIDIA-Linux/libglxserver_nvidia.so.418.56            usr/lib/x86_64-linux-gnu/xorg
+NVIDIA-Linux/libglxserver_nvidia.so.418.56            usr/lib/x86_64-linux-gnu/nvidia-418/xorg
 NVIDIA-Linux/libnvidia-tls.so.418.56                  usr/lib/x86_64-linux-gnu/
 NVIDIA-Linux/nvidia_icd.json                             usr/share/vulkan/icd.d
 NVIDIA-Linux/libGLX_nvidia.so.418.56                  usr/lib/x86_64-linux-gnu
@@ -10,8 +10,6 @@ NVIDIA-Linux/libnvidia-glsi.so.418.56                 usr/lib/x86_64-linux-gnu
 NVIDIA-Linux/libEGL_nvidia.so.418.56                  usr/lib/x86_64-linux-gnu
 NVIDIA-Linux/libGLESv2_nvidia.so.418.56               usr/lib/x86_64-linux-gnu
 NVIDIA-Linux/libGLESv1_CM_nvidia.so.418.56            usr/lib/x86_64-linux-gnu
-NVIDIA-Linux/libnvidia-egl-wayland.so.1.1.2              usr/lib/x86_64-linux-gnu
-NVIDIA-Linux/10_nvidia_wayland.json                      usr/share/egl/egl_external_platform.d
 NVIDIA-Linux/libnvidia-rtcore.so.418.56               usr/lib/x86_64-linux-gnu
 NVIDIA-Linux/libnvidia-cbl.so.418.56                  usr/lib/x86_64-linux-gnu
 NVIDIA-Linux/libnvoptix.so.418.56                     usr/lib/x86_64-linux-gnu
