@@ -8,7 +8,7 @@ case "$1" in
     configure)
         if ! grep "needs_root_rights=yes" "$XWRAPPER" >/dev/null 2>/dev/null
         then
-            echo "# Added by xserver-xorg-video-nvidia-418" >> "$XWRAPPER"
+            echo "# Added by xserver-xorg-video-nvidia-430" >> "$XWRAPPER"
             echo "needs_root_rights=yes" >> "$XWRAPPER"
         fi
         ;;
