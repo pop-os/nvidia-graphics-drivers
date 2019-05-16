@@ -3,3 +3,4 @@ blacklist lbm-nouveau
 alias nouveau off
 alias lbm-nouveau off
 
+options nvidia-drm modeset=1
