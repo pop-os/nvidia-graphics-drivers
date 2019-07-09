@@ -1,5 +1,5 @@
-nvidia-graphics-drivers-430 (430.26-1pop1) bionic; urgency=medium
+nvidia-graphics-drivers-430 (430.34-1pop1) bionic; urgency=medium
 
   * Upstream release
 
- -- Jeremy Soller <jeremy@system76.com>  Fri, 05 Jul 2019 08:46:31 -0600
+ -- Jeremy Soller <jeremy@system76.com>  Tue, 09 Jul 2019 10:47:31 -0600
