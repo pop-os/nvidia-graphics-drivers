@@ -1,3 +1,9 @@
+nvidia-graphics-drivers-430 (430.34-1pop2) bionic; urgency=medium
+
+  * Disable nvidia_drm.modeset to fix blank screens after login
+
+ -- Jeremy Soller <jeremy@system76.com>  Fri, 26 Jul 2019 07:48:06 -0600
+
 nvidia-graphics-drivers-430 (430.34-1pop1) bionic; urgency=medium
 
   * Upstream release
