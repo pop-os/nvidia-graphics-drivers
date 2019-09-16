@@ -107,7 +107,9 @@ ifeq ($(DEB_HOST_ARCH),amd64)
 endif
 
 	dh_install -p nvidia-compute-utils-$(version_major)
-	mkdir -p $(CURDIR)/debian/nvidia-compute-utils-$(version_major)/lib/systemd
+	mkdir -p $(CURDIR)/debian/nvidia-compute-utils-$(version_major)/lib/systemd \
+	    $(CURDIR)/debian/nvidia-compute-utils-$(version_major)/usr/lib/system-sleep
+	cp $(CURDIR)/reload-nvidia-uvm.sh  $(CURDIR)/debian/nvidia-compute-utils-$(version_major)/usr/lib/system-sleep/
 	dh_systemd_enable --name=nvidia-persistenced
 	dh_install -p nvidia-kernel-common-$(version_major)
 
