@@ -1,0 +1,28 @@
+From 4862661793c3a71c2cc0417767080fec518fe7a5 Mon Sep 17 00:00:00 2001
+From: Alberto Milone <alberto.milone@canonical.com>
+Date: Wed, 10 Jul 2019 15:14:33 +0200
+Subject: [PATCH 1/1] Kbuild: pass -fno-stack-clash-protection
+ -fcf-protection=none
+
+This is a temporary fix for (LP: #1830961).
+
+Refreshed for 430.34.
+---
+ Kbuild | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/Kbuild b/Kbuild
+index ef36478..b3c7ed0 100644
+--- a/Kbuild
++++ b/Kbuild
+@@ -71,6 +71,7 @@ ifneq ($(wildcard /proc/sgi_uv),)
+  EXTRA_CFLAGS += -DNV_CONFIG_X86_UV
+ endif
+ 
++EXTRA_CFLAGS += -fno-stack-clash-protection -fcf-protection=none
+ 
+ #
+ # The conftest.sh script tests various aspects of the target kernel.
+-- 
+2.20.1
+
