@@ -1,3 +1,9 @@
+nvidia-graphics-drivers-440 (440.59-1pop1) bionic; urgency=medium
+
+  * Upstream release
+
+ -- Michael Aaron Murphy <michael@system76.com>  Tue, 04 Feb 2020 08:44:37 -0700
+
 nvidia-graphics-drivers-440 (440.44-1pop1) bionic; urgency=medium
 
   * Upstream release 
