@@ -1,8 +1,8 @@
-nvidia-graphics-drivers-440 (440.100-1pop1) focal; urgency=medium
+nvidia-graphics-drivers-450 (450.57-1pop1) focal; urgency=medium
 
-  * Upstream release 
+  * Upstream release
 
- -- Michael Aaron Murphy <michael@system76.com>  Mon, 29 Jun 2020 10:29:14 -0600
+ -- Michael Aaron Murphy <michael@system76.com>  Mon, 29 Jun 2020 09:53:39 -0600
 
 nvidia-graphics-drivers-440 (440.82-1pop1ubuntu1) bionic; urgency=medium
 
@@ -18,25 +18,25 @@ nvidia-graphics-drivers-440 (440.64-1pop1) bionic; urgency=medium
 
 nvidia-graphics-drivers-440 (440.44-1pop1) bionic; urgency=medium
 
-  * Upstream release 
+  * Upstream release
 
  -- Michael Aaron Murphy <michael@system76.com>  Thu, 12 Dec 2019 12:41:29 -0700
 
 nvidia-graphics-drivers-440 (440.36-1pop1) bionic; urgency=medium
 
-  * Upstream release 
+  * Upstream release
 
  -- Michael Aaron Murphy <michael@system76.com>  Fri, 22 Nov 2019 11:07:26 -0700
 
 nvidia-graphics-drivers-440 (440.31-1pop1) bionic; urgency=medium
 
-  * Upstream release 
+  * Upstream release
 
  -- Michael Aaron Murphy <michael@system76.com>  Mon, 04 Nov 2019 11:38:36 -0700
 
 nvidia-graphics-drivers-435 (435.21-1pop1) bionic; urgency=medium
 
-  * Upstream release 
+  * Upstream release
 
  -- Michael Aaron Murphy <michael@system76.com>  Thu, 29 Aug 2019 14:48:25 -0600
 
