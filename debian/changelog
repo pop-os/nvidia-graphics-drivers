@@ -1,3 +1,9 @@
+nvidia-graphics-drivers-450 (450.66-0pop1) focal; urgency=medium
+
+  * New upstream release
+
+ -- Michael Aaron Murphy <michael@system76.com>  Tue, 18 Aug 2020 11:32:24 -0600
+
 nvidia-graphics-drivers-440 (440.100-1pop2) focal; urgency=medium
 
   * Update debian packaging to sync with Ubuntu
