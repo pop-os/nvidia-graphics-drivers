@@ -1,3 +1,9 @@
+nvidia-graphics-drivers-455 (455.23-0pop1) focal; urgency=medium
+
+  * New beta driver 
+
+ -- Michael Aaron Murphy <michael@system76.com>  Thu, 17 Sep 2020 14:40:45 -0600
+
 nvidia-graphics-drivers-450 (450.66-0pop1) focal; urgency=medium
 
   * New upstream release
