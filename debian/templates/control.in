@@ -410,6 +410,14 @@ Description: Transitional package for libnvidia-compute-#FLAVOUR#
  This is a transitional package for libnvidia-compute-#FLAVOUR#, and can be
  safely removed after the installation is complete.
 
+Package: libnvidia-extra-450
+Architecture: i386 amd64
+Depends: libnvidia-extra-#FLAVOUR#
+Multi-Arch: same
+Description: Transitional package for libnvidia-extra-#FLAVOUR#
+ This is a transitional package for libnvidia-extra-#FLAVOUR#, and can be
+ safely removed after the installation is complete.
+
 Package: nvidia-compute-utils-450
 Architecture: amd64
 Depends: nvidia-compute-utils-#FLAVOUR#
@@ -544,6 +552,14 @@ Depends: libnvidia-compute-#FLAVOUR#
 Multi-Arch: same
 Description: Transitional package for libnvidia-compute-#FLAVOUR#
  This is a transitional package for libnvidia-compute-#FLAVOUR#, and can be
+ safely removed after the installation is complete.
+
+Package: libnvidia-extra-440
+Architecture: i386 amd64
+Depends: libnvidia-extra-#FLAVOUR#
+Multi-Arch: same
+Description: Transitional package for libnvidia-extra-#FLAVOUR#
+ This is a transitional package for libnvidia-extra-#FLAVOUR#, and can be
  safely removed after the installation is complete.
 
 Package: nvidia-compute-utils-440
