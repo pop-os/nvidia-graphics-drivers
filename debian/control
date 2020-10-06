@@ -410,6 +410,14 @@ Description: Transitional package for libnvidia-compute-455
  This is a transitional package for libnvidia-compute-455, and can be
  safely removed after the installation is complete.
 
+Package: libnvidia-extra-450
+Architecture: i386 amd64
+Depends: libnvidia-extra-455
+Multi-Arch: same
+Description: Transitional package for libnvidia-extra-455
+ This is a transitional package for libnvidia-extra-455, and can be
+ safely removed after the installation is complete.
+
 Package: nvidia-compute-utils-450
 Architecture: amd64
 Depends: nvidia-compute-utils-455
@@ -544,6 +552,14 @@ Depends: libnvidia-compute-455
 Multi-Arch: same
 Description: Transitional package for libnvidia-compute-455
  This is a transitional package for libnvidia-compute-455, and can be
+ safely removed after the installation is complete.
+
+Package: libnvidia-extra-440
+Architecture: i386 amd64
+Depends: libnvidia-extra-455
+Multi-Arch: same
+Description: Transitional package for libnvidia-extra-455
+ This is a transitional package for libnvidia-extra-455, and can be
  safely removed after the installation is complete.
 
 Package: nvidia-compute-utils-440
