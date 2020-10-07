@@ -1,3 +1,9 @@
+nvidia-graphics-drivers-455 (455.28-0pop1) focal; urgency=medium
+
+  * New upstream release
+
+ -- Jeremy Soller <jeremy@system76.com>  Wed, 07 Oct 2020 09:22:16 -0600
+
 nvidia-graphics-drivers-455 (455.23-0pop1) focal; urgency=medium
 
   * New beta driver 
