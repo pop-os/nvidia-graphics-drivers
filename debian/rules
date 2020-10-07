@@ -12,7 +12,7 @@ XORG_ABI_LIST		?=
 XORG_BOUND		?=
 
 # Temporary hack. Remove -e's/.*\.0//' from the following line
-version			 = $(shell echo $(DEB_VERSION_UPSTREAM) | sed -e's/.*\+really\.//' -e's/\.0//').04
+version			 = $(shell echo $(DEB_VERSION_UPSTREAM) | sed -e's/.*\+really\.//' -e's/\.0//')
 debian_version	= $(shell echo $(DEB_VERSION_UPSTREAM) | sed -e's/.*\+really\.//')
 NVIDIA_RELEASE   = $(version)
 version_major		 = $(firstword $(subst ., ,$(version)))
