@@ -126,6 +126,9 @@ override_dh_clean: regen-from-templates
 	rm -f $(AUTOCLEAN)
 	$(MAKE) -f debian/rules $(AUTOKEEP)
 
+override_dh_compress:
+	dh_compress -X.json
+
 override_dh_auto_configure: prepare regen-from-templates remove-stack-markings
 
 override_dh_install: generate-modaliases build-device-create
