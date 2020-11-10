@@ -1,3 +1,9 @@
+nvidia-graphics-drivers-455 (455.38-1pop0) focal; urgency=medium
+
+  * 455.38 
+
+ -- Michael Aaron Murphy <michael@system76.com>  Mon, 09 Nov 2020 20:43:19 -0700
+
 nvidia-graphics-drivers-455 (455.28-1pop0) focal; urgency=medium
 
   * Pop!_OS patches
