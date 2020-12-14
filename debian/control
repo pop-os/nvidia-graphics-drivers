@@ -32,8 +32,8 @@ Package: nvidia-driver-455
 Architecture: amd64
 Depends:
  libnvidia-gl-455 (= ${binary:Version}),
- nvidia-dkms-455 (>= 455.38),
- nvidia-kernel-common-455 (>= 455.38),
+ nvidia-dkms-455 (>= 455.45),
+ nvidia-kernel-common-455 (>= 455.45),
  nvidia-kernel-source-455 (= ${binary:Version}),
  libnvidia-compute-455 (= ${binary:Version}),
  libnvidia-extra-455 (= ${binary:Version}),
@@ -92,7 +92,7 @@ Provides:
  nvidia-dkms-kernel
 Depends:
  dkms, nvidia-kernel-source-455,
- nvidia-kernel-common-455 (>= 455.38),
+ nvidia-kernel-common-455 (>= 455.45),
  ${misc:Depends}, ${shlibs:Depends}
 Description: NVIDIA DKMS package
  This package builds the NVIDIA kernel module needed by the userspace
@@ -167,7 +167,7 @@ Conflicts: nvidia-384 (<< 390.25), nvidia-390 (<< 390.25-0ubuntu1)
 Provides: nvidia-384
 Replaces: nvidia-384 (<< 390.25), nvidia-390 (<< 390.25-0ubuntu1)
 Depends:
- nvidia-kernel-common-455 (>= 455.38),
+ nvidia-kernel-common-455 (>= 455.45),
  nvidia-kernel-source-455 (= ${binary:Version}),
  libnvidia-compute-455 (= ${binary:Version}),
  nvidia-compute-utils-455 (= ${binary:Version}),
