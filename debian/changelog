@@ -1,3 +1,9 @@
+nvidia-graphics-drivers-455 (455.45-1pop0) focal; urgency=medium
+
+  * 455.45 
+
+ -- Michael Aaron Murphy <mmstick@pop-os.localdomain>  Mon, 14 Dec 2020 10:37:33 -0700
+
 nvidia-graphics-drivers-455 (455.38-1pop0) focal; urgency=medium
 
   * 455.38 
