@@ -1,5 +1,5 @@
-#I386_EXCLUDED#NVIDIA-Linux/nvidia lib/systemd/system-sleep
-#I386_EXCLUDED#NVIDIA-Linux/nvidia-hibernate.service lib/systemd/system
-#I386_EXCLUDED#NVIDIA-Linux/nvidia-resume.service lib/systemd/system
-#I386_EXCLUDED#NVIDIA-Linux/nvidia-sleep.sh usr/bin
-#I386_EXCLUDED#NVIDIA-Linux/nvidia-suspend.service lib/systemd/system
+#I386_EXCLUDED#NVIDIA-Linux/systemd/system-sleep/nvidia lib/systemd/system-sleep
+#I386_EXCLUDED#NVIDIA-Linux/systemd/system/nvidia-hibernate.service lib/systemd/system
+#I386_EXCLUDED#NVIDIA-Linux/systemd/system/nvidia-resume.service lib/systemd/system
+#I386_EXCLUDED#NVIDIA-Linux/systemd/system/nvidia-suspend.service lib/systemd/system
+#I386_EXCLUDED#NVIDIA-Linux/systemd/nvidia-sleep.sh usr/bin
