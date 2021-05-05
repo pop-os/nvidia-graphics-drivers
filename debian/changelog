@@ -1,6 +1,12 @@
-nvidia-graphics-drivers-460 (460.67-1pop0) UNRELEASED; urgency=medium
+nvidia-graphics-drivers-460 (460.73.01-1pop0) focal; urgency=medium
 
-  * 460.67: https://www.nvidia.com/download/driverResults.aspx/171392/en-us
+  * 460.73.01: https://www.nvidia.com/Download/driverResults.aspx/172376/en-us 
+
+ -- Michael Aaron Murphy <michael@system76.com>  Wed, 05 May 2021 09:26:11 -0600
+
+nvidia-graphics-drivers-460 (460.67-1pop0) focal; urgency=medium
+
+  * 460.67: https://www.nvidia.com/download/driverResults.aspx/171392/en-us 
 
  -- Michael Aaron Murphy <michael@system76.com>  Thu, 18 Mar 2021 12:29:53 -0600
 
