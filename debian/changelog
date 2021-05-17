@@ -1,18 +1,24 @@
+nvidia-graphics-drivers-460 (460.80-1pop0) focal; urgency=medium
+
+  * 460.80: https://www.nvidia.com/Download/driverResults.aspx/175203/en-us
+
+ -- Michael Aaron Murphy <michael@system76.com>  Mon, 17 May 2021 11:08:09 -0600
+
 nvidia-graphics-drivers-460 (460.73.01-1pop0) focal; urgency=medium
 
-  * 460.73.01: https://www.nvidia.com/Download/driverResults.aspx/172376/en-us 
+  * 460.73.01: https://www.nvidia.com/Download/driverResults.aspx/172376/en-us
 
  -- Michael Aaron Murphy <michael@system76.com>  Wed, 05 May 2021 09:26:11 -0600
 
 nvidia-graphics-drivers-460 (460.67-1pop0) focal; urgency=medium
 
-  * 460.67: https://www.nvidia.com/download/driverResults.aspx/171392/en-us 
+  * 460.67: https://www.nvidia.com/download/driverResults.aspx/171392/en-us
 
  -- Michael Aaron Murphy <michael@system76.com>  Thu, 18 Mar 2021 12:29:53 -0600
 
 nvidia-graphics-drivers-460 (460.56-1pop0) focal; urgency=medium
 
-  * 460.56: https://www.nvidia.com/download/driverResults.aspx/170804 
+  * 460.56: https://www.nvidia.com/download/driverResults.aspx/170804
 
  -- Michael Aaron Murphy <mmstick@pm.me>  Thu, 25 Feb 2021 09:17:15 -0700
 
@@ -30,13 +36,13 @@ nvidia-graphics-drivers-460 (460.32.03-1pop0) focal; urgency=medium
 
 nvidia-graphics-drivers-455 (455.45-1pop0) focal; urgency=medium
 
-  * 455.45 
+  * 455.45
 
  -- Michael Aaron Murphy <mmstick@pm.me>  Mon, 14 Dec 2020 10:37:33 -0700
 
 nvidia-graphics-drivers-455 (455.38-1pop0) focal; urgency=medium
 
-  * 455.38 
+  * 455.38
 
  -- Michael Aaron Murphy <michael@system76.com>  Mon, 09 Nov 2020 20:43:19 -0700
 
