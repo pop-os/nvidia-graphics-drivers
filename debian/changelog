@@ -1,3 +1,9 @@
+nvidia-graphics-drivers-465 (465.27-1pop0) focal; urgency=medium
+
+  * 465.27: https://www.nvidia.com/Download/driverResults.aspx/174582/en-us
+
+ -- Michael Aaron Murphy <michael@system76.com>  Mon, 17 May 2021 11:25:59 -0600
+
 nvidia-graphics-drivers-465 (465.24.02-1pop0) focal; urgency=medium
 
   * 465.24.02: https://www.nvidia.com/Download/driverResults.aspx/172836/en-us
