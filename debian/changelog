@@ -1,4 +1,4 @@
-nvidia-graphics-drivers-465 (470.42.01) hirsute; urgency=medium
+nvidia-graphics-drivers-470 (470.42.01-1pop0) hirsute; urgency=medium
 
   * 470.42.01 beta: https://forums.developer.nvidia.com/t/linux-solaris-and-freebsd-driver-470-42-01-beta/181536
 
