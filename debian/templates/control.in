@@ -56,7 +56,7 @@ Recommends:
  libnvidia-gl-#FLAVOUR#:i386 (= ${binary:Version}) [amd64]
 XB-Modaliases: ${modaliases}
 XB-PmAliases: ${nvidia:pm-modaliases}
-XB-Support: NFB
+XB-Support: LTSB
 Description: NVIDIA driver metapackage
  This metapackage depends on the NVIDIA binary driver and on all of its libraries,
  to provide hardware acceleration for OpenGL/GLX/EGL/GLES/Vulkan
@@ -91,7 +91,8 @@ Replaces:
 Provides:
  nvidia-dkms-kernel
 Depends:
- dkms, nvidia-kernel-source-#FLAVOUR#,
+ dkms,
+ nvidia-kernel-source-#FLAVOUR# (>= #DEBIAN_VERSION#),
  nvidia-kernel-common-#FLAVOUR# (>= #DEBIAN_VERSION#),
  ${misc:Depends}, ${shlibs:Depends}
 Description: NVIDIA DKMS package
@@ -121,22 +122,22 @@ Architecture: i386 amd64
 Multi-Arch: same
 Depends:
   ${misc:Depends}, ${shlibs:Depends}
-Provides: nvidia-opencl-icd, opencl-icd, libnvidia-ml1 (= ${source:Version}),
+Provides: libnvidia-compute, nvidia-opencl-icd, opencl-icd, libnvidia-ml1 (= ${source:Version}),
  libcuda-5.0-1, libcuda-5.5-1, libcuda-6.0-1, libcuda-6.5-1,
  libcuda-7.0-1, libcuda-7.5-1, libcuda-8.0-1, libcuda-9.0-1,
  libcuda-9.1-1, libcuda-9.2-1, libcuda-10.0-1, libcuda-10.1-1,
- libcuda-10.2-1, libcuda-11.0-1, libcuda-11.1-1,
+ libcuda-10.2-1, libcuda-11.0-1, libcuda-11.1-1, libcuda-11.2-1,
  libcuda1 (= ${source:Version})
-Conflicts: nvidia-opencl-icd,
+Conflicts: libnvidia-compute, nvidia-opencl-icd,
  libcuda-5.0-1, libcuda-5.5-1, libcuda-6.0-1, libcuda-6.5-1,
  libcuda-7.0-1, libcuda-7.5-1, libcuda-8.0-1, libcuda-9.0-1,
  libcuda-9.1-1, libcuda-9.2-1, libcuda-10.0-1, libcuda-10.1-1,
- libcuda-10.2-1, libcuda-11.0-1, libcuda-11.1-1
-Replaces: nvidia-opencl-icd, libnvidia-compute-#FLAVOUR# (<< 390.25-0ubuntu2~),
+ libcuda-10.2-1, libcuda-11.0-1, libcuda-11.1-1, libcuda-11.2-1
+Replaces: libnvidia-compute, nvidia-opencl-icd, libnvidia-compute-#FLAVOUR# (<< 390.25-0ubuntu2~),
  libcuda-5.0-1, libcuda-5.5-1, libcuda-6.0-1, libcuda-6.5-1,
  libcuda-7.0-1, libcuda-7.5-1, libcuda-8.0-1, libcuda-9.0-1,
  libcuda-9.1-1, libcuda-9.2-1, libcuda-10.0-1, libcuda-10.1-1,
- libcuda-10.2-1, libcuda-11.0-1, libcuda-11.1-1
+ libcuda-10.2-1, libcuda-11.0-1, libcuda-11.1-1, libcuda-11.2-1
 Description: NVIDIA libcompute package
  This package provides a set of libraries which enable the NVIDIA driver
  to use GPUs for parallel general purpose computation through CUDA and
@@ -147,9 +148,9 @@ Architecture: amd64
 Depends:
  libnvidia-compute-#FLAVOUR#, adduser,
  ${misc:Depends}, ${shlibs:Depends}
-Provides: nvidia-persistenced
-Conflicts: nvidia-persistenced
-Replaces: nvidia-persistenced
+Provides: nvidia-compute-utils, nvidia-persistenced
+Conflicts: nvidia-compute-utils, nvidia-persistenced
+Replaces: nvidia-compute-utils, nvidia-persistenced
 Description: NVIDIA compute utilities
  This package provides utility binaries for paraller general purpose
  computing use cases with the NVIDIA driver.
@@ -184,6 +185,9 @@ Description: NVIDIA headless metapackage - no DKMS
 
 Package: nvidia-headless-#FLAVOUR#
 Architecture: amd64
+Conflicts: nvidia-headless
+Provides: nvidia-headless
+Replaces: nvidia-headless
 Depends:
  nvidia-headless-no-dkms-#FLAVOUR#,
  nvidia-dkms-#FLAVOUR#,
@@ -228,6 +232,7 @@ Package: libnvidia-common-#FLAVOUR#
 Architecture: all
 Multi-Arch: foreign
 Breaks: libnvidia-gl-#FLAVOUR# (<< 390.25-0ubuntu2~)
+Conflicts: libnvidia-common
 Replaces: libnvidia-common, libnvidia-gl-#FLAVOUR# (<< 390.25-0ubuntu2~)
 Provides: libnvidia-common
 Depends:
