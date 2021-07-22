@@ -106,10 +106,7 @@ build-device-create:
 	@echo "ub-device-create built"
 
 %:
-	dh $@ --with systemd
-
-override_dh_systemd_start:
-	@echo "systemd services will not be started automatically"
+	dh $@
 
 override_dh_auto_clean:
 	rm -fr .pc
@@ -147,6 +144,11 @@ endif
 	mkdir -p $(CURDIR)/debian/nvidia-compute-utils-$(version_major)/lib/systemd
 	dh_systemd_enable --name=nvidia-persistenced
 	dh_install -p nvidia-kernel-common-$(version_major)
+
+	mkdir -p $(CURDIR)/debian/nvidia-kernel-common-$(version_major)/lib/systemd
+	dh_systemd_enable --name=nvidia-hibernate
+	dh_systemd_enable --name=nvidia-resume
+	dh_systemd_enable --name=nvidia-suspend
 
 	dh_install
 
@@ -232,9 +234,16 @@ get_download_url	 = $(or $(HTTPURL_PREFIX_$(strip $1)),$(HTTPURL_PREFIX))/$(HTTP
 get_origdir		 = $(or $(ORIGDIR.$(strip $1)),$(ORIGDIR)-$(strip $1))
 get_tarball		 = $(or $(TARBALL.$(strip $1)),$(TARBALL_BASE)-$(strip $1)$(TARBALL_SUFFIX))
 
-generate-runtimepm-aliases:
+update-runtimepm-ids:
+	python3 $(CURDIR)/debian/add-ids-to-json-db \
+		NVIDIA-Linux/supported-gpus/supported-gpus.json \
+		$(CURDIR)/debian/additional_runtimepm_ids \
+		NVIDIA-Linux/supported-gpus/supported-gpus-mod.json
+
+generate-runtimepm-aliases: update-runtimepm-ids
 	python3 $(CURDIR)/debian/pm-aliases-gen \
-		NVIDIA-Linux/supported-gpus/supported-gpus.json > $(CURDIR)/debian/runtimepm_ids
+		NVIDIA-Linux/supported-gpus/supported-gpus-mod.json > $(CURDIR)/debian/runtimepm_ids
+	rm -f NVIDIA-Linux/supported-gpus/supported-gpus-mod.json
 
 override_dh_gencontrol: generate-runtimepm-aliases
 	dh_gencontrol -- -V'nvidia:Version=$(version)' \
@@ -253,6 +262,7 @@ generate-modaliases:
 	# Generate a modalias for each ID
 	@set -e -x ; \
 	while read line; do \
+		[ "$$line"=~"#.*" ] && continue; \
 		for id in $$line; do \
 			printf 'alias pci:v%08Xd%08Xsv*sd*bc03sc*i* %s %s\n' \
 				0x10de "0x$$id" "$(pkg_module)" "$(pkg_meta)"; \
