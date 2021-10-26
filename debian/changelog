@@ -1,3 +1,9 @@
+nvidia-graphics-drivers-470 (470.82.00-1pop0) focal; urgency=medium
+
+  * 470.82.00: https://www.nvidia.com/Download/driverResults.aspx/181278/en-us
+
+ -- Jeremy Soller <jeremy@system76.com>  Tue, 26 Oct 2021 10:48:56 -0600
+
 nvidia-graphics-drivers-470 (470.63.01-1pop0) focal; urgency=medium
 
   * 470.63.01: https://www.nvidia.com/Download/driverResults.aspx/179599/en-us
