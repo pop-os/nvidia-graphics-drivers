@@ -4,4 +4,3 @@ alias nouveau off
 alias lbm-nouveau off
 
 options nvidia-drm modeset=1
-options nvidia NVreg_PreserveVideoMemoryAllocations=1
