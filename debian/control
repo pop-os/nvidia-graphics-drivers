@@ -32,10 +32,8 @@ Package: nvidia-driver-495
 Architecture: amd64
 Depends:
  libnvidia-gl-495 (= ${binary:Version}),
- nvidia-dkms-495 (<= 495.44-1),
- nvidia-dkms-495 (>= 495.44),
- nvidia-kernel-common-495 (<= 495.44-1),
- nvidia-kernel-common-495 (>= 495.44),
+ nvidia-dkms-495 (>= 495.46),
+ nvidia-kernel-common-495 (>= 495.46),
  nvidia-kernel-source-495 (= ${binary:Version}),
  libnvidia-compute-495 (= ${binary:Version}),
  libnvidia-extra-495 (= ${binary:Version}),
@@ -92,10 +90,8 @@ Provides:
  nvidia-dkms-kernel
 Depends:
  dkms,
- nvidia-kernel-source-495 (<= 495.44-1),
- nvidia-kernel-source-495 (>= 495.44),
- nvidia-kernel-common-495 (<= 495.44-1),
- nvidia-kernel-common-495 (>= 495.44),
+ nvidia-kernel-source-495 (>= 495.46),
+ nvidia-kernel-common-495 (>= 495.46),
  ${misc:Depends}, ${shlibs:Depends}
 Description: NVIDIA DKMS package
  This package builds the NVIDIA kernel module needed by the userspace
@@ -170,8 +166,7 @@ Conflicts: nvidia-384 (<< 390.25), nvidia-390 (<< 390.25-0ubuntu1)
 Provides: nvidia-384
 Replaces: nvidia-384 (<< 390.25), nvidia-390 (<< 390.25-0ubuntu1)
 Depends:
- nvidia-kernel-common-495 (<= 495.44-1),
- nvidia-kernel-common-495 (>= 495.44),
+ nvidia-kernel-common-495 (>= 495.46),
  nvidia-kernel-source-495 (= ${binary:Version}),
  libnvidia-compute-495 (= ${binary:Version}),
  nvidia-compute-utils-495 (= ${binary:Version}),
@@ -358,6 +353,142 @@ Description: NVENC Video Encoding runtime library
  hardware on supported NVIDIA GPUs.
  .
  This package contains the nvidia-encode runtime library.
+
+Package: nvidia-driver-470
+Architecture: amd64
+Depends: nvidia-driver-495
+Multi-Arch: foreign
+Description: Transitional package for nvidia-driver-495
+ This is a transitional package for nvidia-driver-495, and can be
+ safely removed after the installation is complete.
+
+Package: nvidia-kernel-source-470
+Architecture: amd64
+Depends: nvidia-kernel-source-495
+Multi-Arch: foreign
+Description: Transitional package for nvidia-kernel-source-495
+ This is a transitional package for nvidia-kernel-source-495, and can be
+ safely removed after the installation is complete.
+
+Package: nvidia-dkms-470
+Architecture: amd64
+Depends: nvidia-dkms-495
+Multi-Arch: foreign
+Description: Transitional package for nvidia-dkms-495
+ This is a transitional package for nvidia-dkms-495, and can be
+ safely removed after the installation is complete.
+
+Package: nvidia-utils-470
+Architecture: amd64
+Depends: nvidia-utils-495
+Multi-Arch: same
+Description: Transitional package for nvidia-utils-495
+ This is a transitional package for nvidia-utils-495, and can be
+ safely removed after the installation is complete.
+
+Package: libnvidia-compute-470
+Architecture: i386 amd64
+Depends: libnvidia-compute-495
+Multi-Arch: same
+Description: Transitional package for libnvidia-compute-495
+ This is a transitional package for libnvidia-compute-495, and can be
+ safely removed after the installation is complete.
+
+Package: libnvidia-extra-470
+Architecture: i386 amd64
+Depends: libnvidia-extra-495
+Multi-Arch: same
+Description: Transitional package for libnvidia-extra-495
+ This is a transitional package for libnvidia-extra-495, and can be
+ safely removed after the installation is complete.
+
+Package: nvidia-compute-utils-470
+Architecture: amd64
+Depends: nvidia-compute-utils-495
+Multi-Arch: same
+Description: Transitional package for nvidia-compute-utils-495
+ This is a transitional package for nvidia-compute-utils-495, and can be
+ safely removed after the installation is complete.
+
+Package: nvidia-headless-no-dkms-470
+Architecture: amd64
+Depends: nvidia-headless-no-dkms-495
+Multi-Arch: same
+Description: Transitional package for nvidia-headless-no-dkms-495
+ This is a transitional package for nvidia-headless-no-dkms-495, and can be
+ safely removed after the installation is complete.
+
+Package: nvidia-headless-470
+Architecture: amd64
+Depends: nvidia-headless-495
+Multi-Arch: same
+Description: Transitional package for nvidia-headless-495
+ This is a transitional package for nvidia-headless-495, and can be
+ safely removed after the installation is complete.
+
+Package: nvidia-kernel-common-470
+Architecture: amd64
+Depends: nvidia-kernel-common-495
+Multi-Arch: same
+Description: Transitional package for nvidia-kernel-common-495
+ This is a transitional package for nvidia-kernel-common-495, and can be
+ safely removed after the installation is complete.
+
+Package: libnvidia-gl-470
+Architecture: i386 amd64
+Depends: libnvidia-gl-495
+Multi-Arch: same
+Description: Transitional package for libnvidia-gl-495
+ This is a transitional package for libnvidia-gl-495, and can be
+ safely removed after the installation is complete.
+
+Package: libnvidia-common-470
+Architecture: all
+Depends: libnvidia-common-495
+Multi-Arch: foreign
+Description: Transitional package for libnvidia-common-495
+ This is a transitional package for libnvidia-common-495, and can be
+ safely removed after the installation is complete.
+
+Package: xserver-xorg-video-nvidia-470
+Architecture: amd64
+Depends: xserver-xorg-video-nvidia-495
+Multi-Arch: same
+Description: Transitional package for xserver-xorg-video-nvidia-495
+ This is a transitional package for xserver-xorg-video-nvidia-495, and can be
+ safely removed after the installation is complete.
+
+Package: libnvidia-cfg1-470
+Architecture: amd64
+Depends: libnvidia-cfg1-495
+Multi-Arch: same
+Description: Transitional package for libnvidia-cfg1-495
+ This is a transitional package for libnvidia-cfg1-495, and can be
+ safely removed after the installation is complete.
+
+Package: libnvidia-fbc1-470
+Architecture: i386 amd64
+Depends: libnvidia-fbc1-495
+Multi-Arch: same
+Description: Transitional package for libnvidia-fbc1-495
+ This is a transitional package for libnvidia-fbc1-495, and can be
+ safely removed after the installation is complete.
+
+Package: libnvidia-decode-470
+Architecture: i386 amd64
+Depends: libnvidia-decode-495
+Multi-Arch: same
+Description: Transitional package for libnvidia-decode-495
+ This is a transitional package for libnvidia-decode-495, and can be
+ safely removed after the installation is complete.
+
+Package: libnvidia-encode-470
+Architecture: i386 amd64
+Depends: libnvidia-encode-495
+Multi-Arch: same
+Description: Transitional package for libnvidia-encode-495
+ This is a transitional package for libnvidia-encode-495, and can be
+ safely removed after the installation is complete.
 
 Package: nvidia-driver-465
 Architecture: amd64

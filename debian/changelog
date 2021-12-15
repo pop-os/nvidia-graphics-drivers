@@ -1,3 +1,9 @@
+nvidia-graphics-drivers-495 (495.46-1pop0) bionic; urgency=medium
+
+  * 495.46: https://www.nvidia.com/Download/driverResults.aspx/184248/en-us
+
+ -- Jeremy Soller <jeremy@system76.com>  Wed, 15 Dec 2021 13:07:16 -0700
+
 nvidia-graphics-drivers-495 (495.44-0ubuntu0.18.04.1) bionic; urgency=medium
 
   * Initial release (LP: #1948025).
