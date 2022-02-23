@@ -21,6 +21,10 @@ Several graphics cards will have to be tested, preferably in several desktops. T
 - [ ] GSync over DisplayPort is working without flickering or flashing
 - [ ] Multiple NVIDIA GPUs in a desktop are correctly reported by `nvidia-smi`
 - [ ] Steam can be installed and launched
+  - [ ] From Launcher
+  - [ ] From App Library
+  - [ ] From Dock
+  - [ ] From Termial
 - [ ] A native Linux game can be launched from Steam
 - [ ] A Proton game can be launched from Steam
 
@@ -38,6 +42,10 @@ Switchable graphics laptops can render with either the CPU-integrated GPU or the
 - [ ] HDMI-out (including sound) works as expected
 - [ ] External display becomes primary display when laptop lid is closed
 - [ ] Steam can be installed and launched
+  - [ ] From Launcher
+  - [ ] From App Library
+  - [ ] From Dock
+  - [ ] From Termial
 - [ ] A native Linux game can be launched from Steam
 - [ ] A Proton game can be launched from Steam
 
@@ -49,6 +57,10 @@ Switchable graphics laptops can render with either the CPU-integrated GPU or the
 - [ ] HDMI-out (including sound) works as expected
 - [ ] External display becomes primary display when laptop lid is closed
 - [ ] Steam can be installed and launched
+  - [ ] From Launcher
+  - [ ] From App Library
+  - [ ] From Dock
+  - [ ] From Termial
 - [ ] A native Linux game can be launched from Steam
 - [ ] A Proton game can be launched from Steam
 
@@ -61,6 +73,10 @@ Switchable graphics laptops can render with either the CPU-integrated GPU or the
 
 - [ ] Plugging in a display correctly prompts to switch to Hybrid mode
 - [ ] Steam can be installed and launched
+  - [ ] From Launcher
+  - [ ] From App Library
+  - [ ] From Dock
+  - [ ] From Termial
 - [ ] A native Linux game can be launched from Steam
 - [ ] A Proton game can be launched from Steam
 
