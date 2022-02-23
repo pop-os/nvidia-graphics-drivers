@@ -20,6 +20,9 @@ Several graphics cards will have to be tested, preferably in several desktops. T
 - [ ] Multiple displays at once work as expected
 - [ ] GSync over DisplayPort is working without flickering or flashing
 - [ ] Multiple NVIDIA GPUs in a desktop are correctly reported by `nvidia-smi`
+- [ ] Steam can be installed and launched
+- [ ] A native Linux game can be launched from Steam
+- [ ] A Proton game can be launched from Steam
 
 ## Laptop graphics (switchable graphics)
 
@@ -34,6 +37,9 @@ Switchable graphics laptops can render with either the CPU-integrated GPU or the
 - [ ] DisplayPort (mDP and DP over USB-C) outputs (including sound) work as expected
 - [ ] HDMI-out (including sound) works as expected
 - [ ] External display becomes primary display when laptop lid is closed
+- [ ] Steam can be installed and launched
+- [ ] A native Linux game can be launched from Steam
+- [ ] A Proton game can be launched from Steam
 
 ### NVIDIA mode tests
 
@@ -42,6 +48,9 @@ Switchable graphics laptops can render with either the CPU-integrated GPU or the
 - [ ] DisplayPort (mDP and DP over USB-C) outputs (including sound) work as expected
 - [ ] HDMI-out (including sound) works as expected
 - [ ] External display becomes primary display when laptop lid is closed
+- [ ] Steam can be installed and launched
+- [ ] A native Linux game can be launched from Steam
+- [ ] A Proton game can be launched from Steam
 
 ### Compute mode tests
 
@@ -51,6 +60,9 @@ Switchable graphics laptops can render with either the CPU-integrated GPU or the
 ### Integrated mode test
 
 - [ ] Plugging in a display correctly prompts to switch to Hybrid mode
+- [ ] Steam can be installed and launched
+- [ ] A native Linux game can be launched from Steam
+- [ ] A Proton game can be launched from Steam
 
 ## Software tests
 
@@ -58,6 +70,3 @@ These can be done on any machine with an NVIDIA GPU
 
 - [ ] NVIDIA X Server Settings application launches properly
 - [ ] A Unigine benchmark performs as expected
-- [ ] Steam can be installed and launched
-- [ ] A native Linux game can be launched from Steam
-- [ ] A Proton game can be launched from Steam
