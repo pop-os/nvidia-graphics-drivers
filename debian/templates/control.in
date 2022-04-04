@@ -14,13 +14,13 @@ Build-Depends:
  libxext6,
  quilt,
  po-debconf,
- execstack,
  dh-modaliases,
  xserver-xorg-dev (>= 2:1.4),
  libglvnd-dev,
  libkmod-dev,
  libpciaccess-dev,
  pkg-config,
+ libnvidia-egl-wayland1,
  libc6,
  libx11-6,
  python3,
@@ -54,7 +54,7 @@ Recommends:
  libnvidia-gl-#FLAVOUR#:i386 (= ${binary:Version}) [amd64]
 XB-Modaliases: ${modaliases}
 XB-PmAliases: ${nvidia:pm-modaliases}
-XB-Support: LTSB
+XB-Support: PB
 Description: NVIDIA driver metapackage
  This metapackage depends on the NVIDIA binary driver and on all of its libraries,
  to provide hardware acceleration for OpenGL/GLX/EGL/GLES/Vulkan
