@@ -1,3 +1,9 @@
+nvidia-graphics-drivers-510 (510.68.02-1pop0) focal; urgency=medium
+
+  * 510.68.02: https://www.nvidia.com/Download/driverResults.aspx/187526/en-us
+
+ -- Jeremy Soller <jeremy@system76.com>  Tue, 26 Apr 2022 10:26:29 -0600
+
 nvidia-graphics-drivers-510 (510.60.02-1pop0) focal; urgency=medium
 
   * 510.60.02: https://www.nvidia.com/Download/driverResults.aspx/187162/en-us
