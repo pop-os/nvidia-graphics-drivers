@@ -15,6 +15,8 @@ Several graphics cards will have to be tested, preferably in several desktops. T
 
 - [ ] HDMI-out (including sound output) works at expected resolution and refresh rate
 - [ ] DisplayPort-out (including sound output) works at expected resolution and refresh rate
+- [ ] HDMI-out fractional scaling works at 125%, 150%, 175%
+- [ ] DisplayPort-out fractional scaling works at 125%, 150%, 175%
 - [ ] Daisy-chained DisplayPort monitors (DP alt mode) work at expected resolution and refresh rate
 - [ ] Hot plugging/unplugging displays works as expected
 - [ ] Multiple displays at once work as expected
@@ -41,6 +43,8 @@ Switchable graphics laptops can render with either the CPU-integrated GPU or the
 - [ ] DisplayPort (mDP and DP over USB-C) outputs (including sound) work as expected
 - [ ] HDMI-out (including sound) works as expected
 - [ ] External display becomes primary display when laptop lid is closed
+- [ ] HDMI-out fractional scaling on extrnal monitor works at 125%, 150%, 175%
+- [ ] DisplayPort (mDP and DP over USB-C) fractional scaling on extrnal monitor works at 125%, 150%, 175%
 - [ ] Steam can be installed and launched
   - [ ] From Launcher
   - [ ] From App Library
@@ -56,6 +60,8 @@ Switchable graphics laptops can render with either the CPU-integrated GPU or the
 - [ ] DisplayPort (mDP and DP over USB-C) outputs (including sound) work as expected
 - [ ] HDMI-out (including sound) works as expected
 - [ ] External display becomes primary display when laptop lid is closed
+- [ ] HDMI-out fractional scaling on extrnal monitor works at 125%, 150%, 175%
+- [ ] DisplayPort (mDP and DP over USB-C) fractional scaling on extrnal monitor works at 125%, 150%, 175%
 - [ ] Steam can be installed and launched
   - [ ] From Launcher
   - [ ] From App Library
