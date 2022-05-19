@@ -26,7 +26,7 @@ Several graphics cards will have to be tested, preferably in several desktops. T
   - [ ] From Launcher
   - [ ] From App Library
   - [ ] From Dock
-  - [ ] From Termial
+  - [ ] From Terminal
 - [ ] A native Linux game can be launched from Steam
 - [ ] A Proton game can be launched from Steam
 
@@ -49,7 +49,7 @@ Switchable graphics laptops can render with either the CPU-integrated GPU or the
   - [ ] From Launcher
   - [ ] From App Library
   - [ ] From Dock
-  - [ ] From Termial
+  - [ ] From Terminal
 - [ ] A native Linux game can be launched from Steam
 - [ ] A Proton game can be launched from Steam
 
@@ -66,7 +66,7 @@ Switchable graphics laptops can render with either the CPU-integrated GPU or the
   - [ ] From Launcher
   - [ ] From App Library
   - [ ] From Dock
-  - [ ] From Termial
+  - [ ] From Terminal
 - [ ] A native Linux game can be launched from Steam
 - [ ] A Proton game can be launched from Steam
 
@@ -82,7 +82,7 @@ Switchable graphics laptops can render with either the CPU-integrated GPU or the
   - [ ] From Launcher
   - [ ] From App Library
   - [ ] From Dock
-  - [ ] From Termial
+  - [ ] From Terminal
 - [ ] A native Linux game can be launched from Steam
 - [ ] A Proton game can be launched from Steam
 
