@@ -1,23 +1,5 @@
-nvidia-graphics-drivers-510 (510.73.05-1pop0) focal; urgency=medium
+nvidia-graphics-drivers-515 (515.48.07-1pop0) jammy; urgency=medium
 
-  * 510.73.05: https://www.nvidia.com/Download/driverResults.aspx/188994/en-us
+  * https://www.nvidia.com/Download/driverResults.aspx/189809/en-us
 
- -- Jeremy Soller <jeremy@system76.com>  Tue, 24 May 2022 10:59:38 -0600
-
-nvidia-graphics-drivers-510 (510.68.02-1pop0) focal; urgency=medium
-
-  * 510.68.02: https://www.nvidia.com/Download/driverResults.aspx/187526/en-us
-
- -- Jeremy Soller <jeremy@system76.com>  Tue, 26 Apr 2022 10:26:29 -0600
-
-nvidia-graphics-drivers-510 (510.60.02-1pop0) focal; urgency=medium
-
-  * 510.60.02: https://www.nvidia.com/Download/driverResults.aspx/187162/en-us
-
- -- Jeremy Soller <jeremy@system76.com>  Wed, 30 Mar 2022 15:29:19 -0600
-
-nvidia-graphics-drivers-510 (510.54-1pop0) focal; urgency=medium
-
-  * 510.54: https://www.nvidia.com/Download/driverResults.aspx/186996/en-us
-
- -- Jeremy Soller <jeremy@system76.com>  Mon, 14 Feb 2022 15:12:27 -0700
+ -- Jeremy Soller <jeremy@system76.com>  Fri, 03 Jun 2022 07:33:09 -0600
