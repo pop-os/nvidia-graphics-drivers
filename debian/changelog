@@ -1,3 +1,9 @@
+nvidia-graphics-drivers-515 (515.57-1pop0) jammy; urgency=medium
+
+  * https://www.nvidia.com/Download/driverResults.aspx/190414/en-us/
+
+ -- Michael Aaron Murphy <mmstick@pm.me>  Mon, 11 Jul 2022 13:19:11 +0200
+
 nvidia-graphics-drivers-515 (515.48.07-1pop0) jammy; urgency=medium
 
   * https://www.nvidia.com/Download/driverResults.aspx/189809/en-us
