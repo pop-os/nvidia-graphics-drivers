@@ -38,7 +38,7 @@ Switchable graphics laptops can render with either the CPU-integrated GPU or the
 
 ### Hybrid mode tests
 
-- [ ] Laptop suspends and resumes
+- [ ] Laptop suspends and resumes (works with a bluetooth device paired)
 - [ ] `nvidia-smi` correctly reports the GPU's status
 - [ ] DisplayPort (mDP and DP over USB-C) outputs (including sound) work as expected
 - [ ] HDMI-out (including sound) works as expected
@@ -55,7 +55,7 @@ Switchable graphics laptops can render with either the CPU-integrated GPU or the
 
 ### NVIDIA mode tests
 
-- [ ] Laptop suspends and resumes
+- [ ] Laptop suspends and resumes (works with a bluetooth device paired)
 - [ ] `nvidia-smi` correctly reports the GPU's status
 - [ ] DisplayPort (mDP and DP over USB-C) outputs (including sound) work as expected
 - [ ] HDMI-out (including sound) works as expected
