@@ -1,3 +1,9 @@
+nvidia-graphics-drivers-515 (515.65.01-1pop0) jammy; urgency=medium
+
+  * https://www.nvidia.com/en-us/drivers/results/191961/
+
+ -- Brock Szuszczewicz <brock@szu.email>  Mon, 22 Aug 2022 18:39:59 -0600
+
 nvidia-graphics-drivers-515 (515.48.07-1pop0) jammy; urgency=medium
 
   * https://www.nvidia.com/Download/driverResults.aspx/189809/en-us
