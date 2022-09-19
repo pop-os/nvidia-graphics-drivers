@@ -1,5 +1,5 @@
 #!/bin/bash
-# postinst script for nvidia-driver-515
+# revert 1d4c017c8a7ec1406648c78e3dbb8fb1d44fb2e1
 #
 # see: dh_installdeb(1)
 #
@@ -7,27 +7,9 @@
 # Authors: Brock Szuszczewicz
 set -e
 
-# This postinst is to add Nvidia drm drivers to initramfs. This is required for
-# some systems when showing Plymouth in the initramfs
-
-# Make sure 120M is available in ESP
-is_enough_esp_space () {
-    efi=($(df | grep /boot/efi)) \
-    && echo $((${efi[3]} >= 120000)) \
-    || echo 0
-}
-
-# Return true if initramfs module is not added, or added incorrectly
-is_driver_added () {
-    [[ -r /usr/share/initramfs-tools/modules.d/system76-nvidia-initramfs.conf ]] \
-    && [[ "$(cat /usr/share/initramfs-tools/modules.d/system76-nvidia-initramfs.conf)" == $(echo -e "# Added by System76 Nvidia Packaging\nnvidia-drm\n") ]] \
-    && echo 1 \
-    || echo 0
-}
-
-if [[ `is_enough_esp_space` = 1 ]] && [[ `is_driver_added` = 0 ]]; then
-    echo $'# Added by System76 Nvidia Packaging\nnvidia-drm\n' > "/usr/share/initramfs-tools/modules.d/system76-nvidia-initramfs.conf"
-    update-initramfs -u
+if [[ -e /usr/share/initramfs-tools/modules.d/system76-nvidia-initramfs.conf ]]; then
+	rm /usr/share/initramfs-tools/modules.d/system76-nvidia-initramfs.conf
+	update-initramfs -u
 fi
 
 #DEBHELPER#
