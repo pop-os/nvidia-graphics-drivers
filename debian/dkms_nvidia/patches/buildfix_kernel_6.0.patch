@@ -1,0 +1,16 @@
+diff --git a/nvidia-drm/nvidia-drm-helper.c b/nvidia-drm/nvidia-drm-helper.c
+index 3831180..e615aef 100644
+--- a/nvidia-drm/nvidia-drm-helper.c
++++ b/nvidia-drm/nvidia-drm-helper.c
+@@ -41,6 +41,11 @@
+ #include <drm/drm_atomic_uapi.h>
+ #endif
+ 
++#include <linux/version.h>
++#if LINUX_VERSION_CODE >= KERNEL_VERSION(6, 0, 0)
++#include <drm/drm_framebuffer.h>
++#endif
++
+ static void __nv_drm_framebuffer_put(struct drm_framebuffer *fb)
+ {
+ #if defined(NV_DRM_FRAMEBUFFER_GET_PRESENT)
