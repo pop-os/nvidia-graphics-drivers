@@ -1,4 +1,5 @@
 NVIDIA-Linux/libcuda.so.525.60.11                         usr/lib/x86_64-linux-gnu
+NVIDIA-Linux/libcudadebugger.so.525.60.11                 usr/lib/x86_64-linux-gnu
 NVIDIA-Linux/libnvidia-compiler.so.525.60.11                 usr/lib/x86_64-linux-gnu
 NVIDIA-Linux/libnvidia-ml.so.525.60.11                    usr/lib/x86_64-linux-gnu
 NVIDIA-Linux/libnvidia-nvvm.so.525.60.11                  usr/lib/x86_64-linux-gnu
