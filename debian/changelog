@@ -1,3 +1,9 @@
+nvidia-graphics-drivers-525 (525.60.11-1pop1) jammy; urgency=medium
+
+  * Added nvidia-powerd service to packaging
+
+ -- Michael Murphy <michael@mmurphy.dev>  Tue, 13 Dec 2022 17:22:12 +0100
+
 nvidia-graphics-drivers-525 (525.60.11-1pop0) jammy; urgency=medium
 
   * https://www.nvidia.com/Download/driverResults.aspx/196723/
