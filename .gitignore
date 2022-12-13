@@ -1,0 +1,17 @@
+DEBIAN/
+usr/
+lib/
+etc/
+sbin/
+debian/*.substvars
+debian/*.log
+debian/NVIDIA-*
+debian/*.debhelper
+debian/device-create
+debian/dkms.conf
+debian/files
+debian/runtimepm_ids
+LICENSE.txt
+NVIDIA-Linux*
+unpack-stamp
+debian/dkms.con
