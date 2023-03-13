@@ -1,22 +1,22 @@
-nvidia-graphics-drivers-525 (525.89.02-1pop0) jammy; urgency=medium
+nvidia-graphics-drivers-525 (525.89.02-1pop0) focal; urgency=medium
 
   * https://www.nvidia.com/Download/driverResults.aspx/199656/en-us/
 
  -- Brock <brock@szu.email>  Wed, 22 Feb 2023 20:59:34 -0700
 
-nvidia-graphics-drivers-525 (525.85.05-1pop0) jammy; urgency=medium
+nvidia-graphics-drivers-525 (525.85.05-1pop0) focal; urgency=medium
 
   * https://www.nvidia.com/Download/driverResults.aspx/198554/en-us/
 
  -- Brock Szuszczewicz <brock@szu.email>  Thu, 19 Jan 2023 20:00:51 -0700
 
-nvidia-graphics-drivers-525 (525.78.01-1pop0) jammy; urgency=medium
+nvidia-graphics-drivers-525 (525.78.01-1pop0) focal; urgency=medium
 
   * https://www.nvidia.com/download/driverResults.aspx/198284/en-us/
 
  -- Brock Szuszczewicz <brock@szu.email>  Thu, 05 Jan 2023 16:58:14 -0700
 
-nvidia-graphics-drivers-525 (525.60.11-1pop0) jammy; urgency=medium
+nvidia-graphics-drivers-525 (525.60.11-1pop0) focal; urgency=medium
 
   * https://www.nvidia.com/Download/driverResults.aspx/196723/
 
