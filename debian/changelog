@@ -1,3 +1,9 @@
+nvidia-graphics-drivers-525 (525.116.03-1pop0) focal; urgency=medium
+
+  * https://www.nvidia.com/Download/driverResults.aspx/204639/en-us/
+
+ -- Brock Szuszczewicz <brock@szu.email>  Tue, 02 May 2023 10:19:13 -0600
+
 nvidia-graphics-drivers-525 (525.105.17-1pop0) focal; urgency=medium
 
   * https://www.nvidia.com/Download/driverResults.aspx/202351/en-us/
