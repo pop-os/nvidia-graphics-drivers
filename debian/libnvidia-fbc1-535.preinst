@@ -1,0 +1,29 @@
+#!/bin/sh
+
+set -e
+
+case "$1" in
+    install|upgrade)
+
+    # Stop these services so they won't crash the display
+    /bin/systemctl disable --now nvidia-persistenced || true
+    /bin/systemctl disable --now nvidia-powerd || true
+    /bin/systemctl disable --now nvidia-suspend || true
+    /bin/systemctl disable --now nvidia-hibernate || true
+    /bin/systemctl disable --now nvidia-resume || true
+
+    ;;
+
+    abort-upgrade)
+    ;;
+
+    *)
+        echo "preinst called with unknown argument \`$1'" >&2
+        exit 0
+    ;;
+esac
+
+
+#DEBHELPER#
+
+exit 0
