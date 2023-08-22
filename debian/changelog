@@ -1,3 +1,9 @@
+nvidia-graphics-drivers-535 (535.104.05-1pop0) focal; urgency=medium
+
+  * https://www.nvidia.com/Download/driverResults.aspx/210649/en-us/
+
+ -- Michael Aaron Murphy <michael@mmurphy.dev>  Tue, 22 Aug 2023 15:48:06 +0200
+
 nvidia-graphics-drivers-535 (535.98-1pop0) focal; urgency=medium
 
   * https://www.nvidia.com/download/driverResults.aspx/210317/en-us/
