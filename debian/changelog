@@ -1,29 +1,5 @@
-nvidia-graphics-drivers-535 (535.113.01-1pop0) focal; urgency=medium
+nvidia-graphics-drivers-545 (545.23.06-1pop0) focal; urgency=medium
 
-  * https://www.nvidia.com/download/driverResults.aspx/211711/en-us/ 
+  * https://www.nvidia.com/download/driverResults.aspx/212964/en-us/
 
- -- Michael Aaron Murphy <michael@mmurphy.dev>  Fri, 22 Sep 2023 14:24:32 +0200
-
-nvidia-graphics-drivers-535 (535.104.05-1pop0) focal; urgency=medium
-
-  * https://www.nvidia.com/Download/driverResults.aspx/210649/en-us/
-
- -- Michael Aaron Murphy <michael@mmurphy.dev>  Tue, 22 Aug 2023 15:48:06 +0200
-
-nvidia-graphics-drivers-535 (535.98-1pop0) focal; urgency=medium
-
-  * https://www.nvidia.com/download/driverResults.aspx/210317/en-us/
-
- -- Michael Aaron Murphy <michael@mmurphy.dev>  Wed, 09 Aug 2023 13:16:34 +0200
-
-nvidia-graphics-drivers-535 (535.86.05-1pop0) focal; urgency=medium
-
-  * https://www.nvidia.com/Download/driverResults.aspx/209261/en-us/
-
- -- Michael Aaron Murphy <michael@mmurphy.dev>  Tue, 18 Jul 2023 20:13:53 +0200
-
-nvidia-graphics-drivers-535 (535.54.03-1pop0) focal; urgency=medium
-
-  * https://www.nvidia.com/Download/driverResults.aspx/205464/en-us/
-
- -- Brock Szuszczewicz <brock@szu.email>  Sat, 03 Jun 2023 10:13:22 -0600
+ -- Michael Murphy <michael@mmurphy.dev>  Wed, 18 Oct 2023 20:10:56 +0200
