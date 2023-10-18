@@ -45,6 +45,7 @@ Depends:
  xserver-xorg-video-nvidia-#FLAVOUR# (= ${binary:Version}),
  libnvidia-cfg1-#FLAVOUR# (= ${binary:Version}),
  libnvidia-fbc1-#FLAVOUR# (= ${binary:Version}) [!ppc64el],
+ libnvidia-egl-wayland1,
  ${misc:Depends}
 Recommends:
  nvidia-settings,

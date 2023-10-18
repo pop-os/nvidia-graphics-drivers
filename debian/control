@@ -45,6 +45,7 @@ Depends:
  xserver-xorg-video-nvidia-545 (= ${binary:Version}),
  libnvidia-cfg1-545 (= ${binary:Version}),
  libnvidia-fbc1-545 (= ${binary:Version}) [!ppc64el],
+ libnvidia-egl-wayland1,
  ${misc:Depends}
 Recommends:
  nvidia-settings,
