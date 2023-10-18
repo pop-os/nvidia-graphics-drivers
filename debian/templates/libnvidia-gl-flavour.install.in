@@ -30,4 +30,5 @@
 #I386_ONLY#NVIDIA-Linux/32/libnvidia-glcore.so.#VERSION#                  #LIBDIR#
 #I386_ONLY#NVIDIA-Linux/32/libnvidia-glsi.so.#VERSION#                    #LIBDIR#
 #I386_ONLY#NVIDIA-Linux/32/libnvidia-glvkspirv.so.#VERSION#               #LIBDIR#
+#I386_ONLY#NVIDIA-Linux/32/libnvidia-gpucomp.so.#VERSION#                 #LIBDIR#
 #I386_ONLY#NVIDIA-Linux/32/libnvidia-tls.so.#VERSION#                     #LIBDIR#

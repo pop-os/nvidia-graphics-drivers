@@ -30,4 +30,5 @@ NVIDIA-Linux/nvoptix.bin                                   usr/share/nvidia
 #NVIDIA-Linux/32/libnvidia-glcore.so.545.23.06                  usr/lib/x86_64-linux-gnu
 #NVIDIA-Linux/32/libnvidia-glsi.so.545.23.06                    usr/lib/x86_64-linux-gnu
 #NVIDIA-Linux/32/libnvidia-glvkspirv.so.545.23.06               usr/lib/x86_64-linux-gnu
+#NVIDIA-Linux/32/libnvidia-gpucomp.so.545.23.06                 usr/lib/x86_64-linux-gnu
 #NVIDIA-Linux/32/libnvidia-tls.so.545.23.06                     usr/lib/x86_64-linux-gnu
