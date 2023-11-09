@@ -1,4 +1,5 @@
-#AMD64_ONLY#NVIDIA-Linux/libnvidia-pkcs11-openssl3.so.#VERSION#          #LIBDIR#
+#AMD64_ONLY##FOCAL_ONLY#NVIDIA-Linux/libnvidia-pkcs11.so.#VERSION#          #LIBDIR#
+#AMD64_ONLY##FOCAL_EXCLUDED#NVIDIA-Linux/libnvidia-pkcs11-openssl3.so.#VERSION#          #LIBDIR#
 #I386_EXCLUDED#NVIDIA-Linux/libcuda.so.#VERSION#                         #LIBDIR#
 #I386_EXCLUDED#NVIDIA-Linux/libcudadebugger.so.#VERSION#                 #LIBDIR#
 #I386_EXCLUDED#NVIDIA-Linux/libnvidia-ml.so.#VERSION#                    #LIBDIR#
