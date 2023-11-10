@@ -1,4 +1,5 @@
-#I386_EXCLUDED##LIBDIR#/libnvidia-vulkan-producer.so.#VERSION#              #LIBDIR#/libnvidia-vulkan-producer.so
+#I386_EXCLUDED##LIBDIR#/libnvidia-egl-ebm.so.#VERSION#                      #LIBDIR#/libnvidia-egl-ebm.so
+#I386_EXCLUDED##LIBDIR#/libnvidia-egl-ebm.so.#VERSION#                      #LIBDIR#/libnvidia-egl-ebm.so.1
 #I386_EXCLUDED##LIBDIR#/libnvidia-wayland-client.so.#VERSION#               #LIBDIR#/libnvidia-wayland-client.so
 #I386_EXCLUDED##LIBDIR#/libnvidia-wayland-client.so.#VERSION#               #LIBDIR#/libnvidia-wayland-client.so.1
 #I386_EXCLUDED##LIBDIR#/libnvoptix.so.#VERSION#                             #LIBDIR#/libnvoptix.so.1
