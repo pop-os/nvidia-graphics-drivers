@@ -1,4 +1,5 @@
-usr/lib/x86_64-linux-gnu/libnvidia-vulkan-producer.so.545.29.02              usr/lib/x86_64-linux-gnu/libnvidia-vulkan-producer.so
+usr/lib/x86_64-linux-gnu/libnvidia-egl-ebm.so.545.29.02                      usr/lib/x86_64-linux-gnu/libnvidia-egl-ebm.so
+usr/lib/x86_64-linux-gnu/libnvidia-egl-ebm.so.545.29.02                      usr/lib/x86_64-linux-gnu/libnvidia-egl-ebm.so.1
 usr/lib/x86_64-linux-gnu/libnvidia-wayland-client.so.545.29.02               usr/lib/x86_64-linux-gnu/libnvidia-wayland-client.so
 usr/lib/x86_64-linux-gnu/libnvidia-wayland-client.so.545.29.02               usr/lib/x86_64-linux-gnu/libnvidia-wayland-client.so.1
 usr/lib/x86_64-linux-gnu/libnvoptix.so.545.29.02                             usr/lib/x86_64-linux-gnu/libnvoptix.so.1
