@@ -17,6 +17,7 @@ NVIDIA-Linux/libnvidia-gpucomp.so.545.29.02                usr/lib/x86_64-linux-
 NVIDIA-Linux/libnvidia-ngx.so.545.29.02                    usr/lib/x86_64-linux-gnu
 NVIDIA-Linux/libnvidia-rtcore.so.545.29.02                 usr/lib/x86_64-linux-gnu
 NVIDIA-Linux/libnvidia-tls.so.545.29.02                    usr/lib/x86_64-linux-gnu
+NVIDIA-Linux/libnvidia-wayland-client.so.545.29.02         usr/lib/x86_64-linux-gnu
 NVIDIA-Linux/libnvoptix.so.545.29.02                       usr/lib/x86_64-linux-gnu
 NVIDIA-Linux/nvidia-ngx-updater                            usr/bin
 NVIDIA-Linux/nvidia_icd.json                               usr/share/vulkan/icd.d
