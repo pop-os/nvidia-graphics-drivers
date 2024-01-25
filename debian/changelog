@@ -1,3 +1,9 @@
+nvidia-graphics-drivers-550 (550.40.07-1pop0) jammy; urgency=medium
+
+  * https://www.nvidia.com/download/driverResults.aspx/218153/en-us/
+
+ -- Michael Murphy <michael@mmurphy.dev>  Thu, 25 Jan 2024 20:38:18 +0100
+
 nvidia-graphics-drivers-545 (545.29.06-1pop0) jammy; urgency=medium
 
   * https://www.nvidia.com/Download/driverResults.aspx/216530/en-us/
