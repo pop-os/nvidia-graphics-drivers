@@ -481,6 +481,144 @@ Description: NVIDIA headless metapackage (open kernel module)
  Install this package if you do not need X11 or Wayland support, which is
  provided by the nvidia-driver-550 metapackage.
 
+# 545 Transitional Packaging
+
+Package: nvidia-driver-545
+Architecture: amd64
+Depends: nvidia-driver-550
+Multi-Arch: foreign
+Description: Transitional package for nvidia-driver-550
+ This is a transitional package for nvidia-driver-550, and can be
+ safely removed after the installation is complete.
+
+Package: nvidia-kernel-source-545
+Architecture: amd64
+Depends: nvidia-kernel-source-550
+Multi-Arch: foreign
+Description: Transitional package for nvidia-kernel-source-550
+ This is a transitional package for nvidia-kernel-source-550, and can be
+ safely removed after the installation is complete.
+
+Package: nvidia-dkms-545
+Architecture: amd64
+Depends: nvidia-dkms-550
+Multi-Arch: foreign
+Description: Transitional package for nvidia-dkms-550
+ This is a transitional package for nvidia-dkms-550, and can be
+ safely removed after the installation is complete.
+
+Package: nvidia-utils-545
+Architecture: amd64
+Depends: nvidia-utils-550
+Multi-Arch: same
+Description: Transitional package for nvidia-utils-550
+ This is a transitional package for nvidia-utils-550, and can be
+ safely removed after the installation is complete.
+
+Package: libnvidia-compute-545
+Architecture: i386 amd64
+Depends: libnvidia-compute-550
+Multi-Arch: same
+Description: Transitional package for libnvidia-compute-550
+ This is a transitional package for libnvidia-compute-550, and can be
+ safely removed after the installation is complete.
+
+Package: nvidia-compute-utils-545
+Architecture: amd64
+Depends: nvidia-compute-utils-550
+Multi-Arch: same
+Description: Transitional package for nvidia-compute-utils-550
+ This is a transitional package for nvidia-compute-utils-550, and can be
+ safely removed after the installation is complete.
+
+Package: nvidia-headless-no-dkms-545
+Architecture: amd64
+Depends: nvidia-headless-no-dkms-550
+Multi-Arch: same
+Description: Transitional package for nvidia-headless-no-dkms-550
+ This is a transitional package for nvidia-headless-no-dkms-550, and can be
+ safely removed after the installation is complete.
+
+Package: nvidia-headless-545
+Architecture: amd64
+Depends: nvidia-headless-550
+Multi-Arch: same
+Description: Transitional package for nvidia-headless-550
+ This is a transitional package for nvidia-headless-550, and can be
+ safely removed after the installation is complete.
+
+Package: nvidia-kernel-common-545
+Architecture: amd64
+Depends: nvidia-kernel-common-550
+Multi-Arch: same
+Description: Transitional package for nvidia-kernel-common-550
+ This is a transitional package for nvidia-kernel-common-550, and can be
+ safely removed after the installation is complete.
+
+Package: libnvidia-gl-545
+Architecture: i386 amd64
+Depends: libnvidia-gl-550
+Multi-Arch: same
+Description: Transitional package for libnvidia-gl-550
+ This is a transitional package for libnvidia-gl-550, and can be
+ safely removed after the installation is complete.
+
+Package: libnvidia-common-545
+Architecture: all
+Depends: libnvidia-common-550
+Multi-Arch: foreign
+Description: Transitional package for libnvidia-common-550
+ This is a transitional package for libnvidia-common-550, and can be
+ safely removed after the installation is complete.
+
+Package: libnvidia-extra-545
+Architecture: i386 amd64
+Depends: libnvidia-extra-550
+Multi-Arch: same
+Description: Transitional package for libnvidia-extra-550
+ This is a transitional package for libnvidia-extra-550, and can be
+ safely removed after the installation is complete.
+
+Package: xserver-xorg-video-nvidia-545
+Architecture: amd64
+Depends: xserver-xorg-video-nvidia-550
+Multi-Arch: same
+Description: Transitional package for xserver-xorg-video-nvidia-550
+ This is a transitional package for xserver-xorg-video-nvidia-550, and can be
+ safely removed after the installation is complete.
+
+Package: libnvidia-cfg1-545
+Architecture: amd64
+Depends: libnvidia-cfg1-550
+Multi-Arch: same
+Description: Transitional package for libnvidia-cfg1-550
+ This is a transitional package for libnvidia-cfg1-550, and can be
+ safely removed after the installation is complete.
+
+Package: libnvidia-fbc1-545
+Architecture: i386 amd64
+Depends: libnvidia-fbc1-550
+Multi-Arch: same
+Description: Transitional package for libnvidia-fbc1-550
+ This is a transitional package for libnvidia-fbc1-550, and can be
+ safely removed after the installation is complete.
+
+Package: libnvidia-decode-545
+Architecture: i386 amd64
+Depends: libnvidia-decode-550
+Multi-Arch: same
+Description: Transitional package for libnvidia-decode-550
+ This is a transitional package for libnvidia-decode-550, and can be
+ safely removed after the installation is complete.
+
+Package: libnvidia-encode-545
+Architecture: i386 amd64
+Depends: libnvidia-encode-550
+Multi-Arch: same
+Description: Transitional package for libnvidia-encode-550
+ This is a transitional package for libnvidia-encode-550, and can be
+ safely removed after the installation is complete.
+
 # 535 Transitional Packaging
 
 Package: nvidia-driver-535
