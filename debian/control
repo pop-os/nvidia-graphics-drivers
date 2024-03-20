@@ -33,8 +33,8 @@ Package: nvidia-driver-550
 Architecture: amd64
 Depends:
  libnvidia-gl-550 (= ${binary:Version}),
- nvidia-dkms-550 (>= 550.54.14),
- nvidia-kernel-common-550 (>= 550.54.14),
+ nvidia-dkms-550 (>= 550.67),
+ nvidia-kernel-common-550 (>= 550.67),
  nvidia-kernel-source-550 (= ${binary:Version}),
  libnvidia-compute-550 (= ${binary:Version}),
  libnvidia-extra-550 (= ${binary:Version}),
@@ -92,9 +92,9 @@ Provides:
  nvidia-dkms-kernel
 Depends:
  dkms,
- nvidia-kernel-source-550 (>= 550.54.14),
- nvidia-kernel-common-550 (>= 550.54.14),
- nvidia-firmware-550-550.54.14,
+ nvidia-kernel-source-550 (>= 550.67),
+ nvidia-kernel-common-550 (>= 550.67),
+ nvidia-firmware-550-550.67,
  ${misc:Depends}, ${shlibs:Depends}
 Description: NVIDIA DKMS package
  This package builds the NVIDIA kernel module needed by the userspace
@@ -175,7 +175,7 @@ Conflicts: nvidia-384 (<< 390.25), nvidia-390 (<< 390.25-0ubuntu1)
 Provides: nvidia-384
 Replaces: nvidia-384 (<< 390.25), nvidia-390 (<< 390.25-0ubuntu1)
 Depends:
- nvidia-kernel-common-550 (>= 550.54.14),
+ nvidia-kernel-common-550 (>= 550.67),
  nvidia-kernel-source-550 (= ${binary:Version}),
  libnvidia-compute-550 (= ${binary:Version}),
  nvidia-compute-utils-550 (= ${binary:Version}),
@@ -223,7 +223,7 @@ Description: Shared files used with the kernel module
  modules, and if you want udev to load the the NVIDIA kernel modules,
  and to create the uvm devices automatically.
 
-Package: nvidia-firmware-550-550.54.14
+Package: nvidia-firmware-550-550.67
 Architecture: amd64
 Depends:
  ${misc:Depends}
@@ -375,8 +375,8 @@ Package: nvidia-driver-550-open
 Architecture: amd64
 Depends:
  libnvidia-gl-550 (= ${binary:Version}),
- nvidia-dkms-550-open (>= 550.54.14),
- nvidia-kernel-common-550 (>= 550.54.14),
+ nvidia-dkms-550-open (>= 550.67),
+ nvidia-kernel-common-550 (>= 550.67),
  nvidia-kernel-source-550-open (= ${binary:Version}),
  libnvidia-compute-550 (= ${binary:Version}),
  libnvidia-extra-550 (= ${binary:Version}),
@@ -433,8 +433,8 @@ Provides:
  nvidia-dkms-kernel
 Depends:
  dkms,
- nvidia-kernel-source-550-open (>= 550.54.14),
- nvidia-kernel-common-550 (>= 550.54.14),
+ nvidia-kernel-source-550-open (>= 550.67),
+ nvidia-kernel-common-550 (>= 550.67),
  ${misc:Depends}, ${shlibs:Depends}
 Description: NVIDIA DKMS package (open kernel module)
  This package builds the open NVIDIA kernel module needed by the userspace
@@ -449,7 +449,7 @@ Conflicts: nvidia-384 (<< 390.25), nvidia-390 (<< 390.25-0ubuntu1)
 Provides: nvidia-384
 Replaces: nvidia-384 (<< 390.25), nvidia-390 (<< 390.25-0ubuntu1)
 Depends:
- nvidia-kernel-common-550 (>= 550.54.14),
+ nvidia-kernel-common-550 (>= 550.67),
  nvidia-kernel-source-550-open (= ${binary:Version}),
  libnvidia-compute-550 (= ${binary:Version}),
  nvidia-compute-utils-550 (= ${binary:Version}),
