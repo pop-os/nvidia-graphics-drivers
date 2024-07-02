@@ -1,3 +1,9 @@
+nvidia-graphics-drivers-555 (555.58.02-1pop0) jammy; urgency=medium
+
+  * https://www.nvidia.com/Download/driverResults.aspx/228410/en-us/
+
+ -- Michael Aaron Murphy <michael@mmurphy.dev>  Tue, 02 Jul 2024 16:56:14 +0200
+
 nvidia-graphics-drivers-555 (555.58-1pop0) jammy; urgency=medium
 
   * https://www.nvidia.com/download/driverResults.aspx/228214/en-us/
