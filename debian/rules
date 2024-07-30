@@ -181,6 +181,9 @@ override_dh_installinit:
 override_dh_shlibdeps:
 	LD_LIBRARY_PATH=/$(libdir):$(LD_LIBRARY_PATH) dh_shlibdeps --exclude=libnvidia-compute-535
 
+override_dh_builddeb:
+	dh_builddeb -- -Zzstd -z3
+
 # Do not run dh_strip here.  The NVIDIA license says:
 #
 #     2.1.2 Linux/FreeBSD Exception.  Notwithstanding the foregoing terms of
