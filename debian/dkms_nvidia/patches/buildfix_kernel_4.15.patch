@@ -71,7 +71,7 @@ index b54128a..d820dc2 100644
 +#include <linux/version.h>
  
  static const u32 nv_default_supported_plane_drm_formats[] = {
-     DRM_FORMAT_ARGB1555,
+     DRM_FORMAT_ARGB1560,
 @@ -141,7 +142,11 @@ static int nv_drm_plane_atomic_check(struct drm_plane *plane,
          goto done;
      }
