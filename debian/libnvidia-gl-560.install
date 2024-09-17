@@ -31,6 +31,9 @@ NVIDIA-Linux/nvoptix.bin                                   usr/share/nvidia
 #NVIDIA-Linux/32/libGLESv1_CM_nvidia.so.560.35.03               usr/lib/x86_64-linux-gnu
 #NVIDIA-Linux/32/libGLESv2_nvidia.so.560.35.03                  usr/lib/x86_64-linux-gnu
 #NVIDIA-Linux/32/libGLX_nvidia.so.560.35.03                     usr/lib/x86_64-linux-gnu
+#NVIDIA-Linux/32/libnvidia-egl-gbm.so.1.1.1                    usr/lib/x86_64-linux-gnu
+#NVIDIA-Linux/32/libnvidia-egl-xcb.so.1                        usr/lib/x86_64-linux-gnu
+#NVIDIA-Linux/32/libnvidia-egl-xlib.so.1                       usr/lib/x86_64-linux-gnu
 #NVIDIA-Linux/32/libnvidia-eglcore.so.560.35.03                 usr/lib/x86_64-linux-gnu
 #NVIDIA-Linux/32/libnvidia-glcore.so.560.35.03                  usr/lib/x86_64-linux-gnu
 #NVIDIA-Linux/32/libnvidia-glsi.so.560.35.03                    usr/lib/x86_64-linux-gnu
