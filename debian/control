@@ -211,7 +211,7 @@ Architecture: amd64 arm64
 Conflicts: nvidia-kernel-common
 Provides: nvidia-kernel-common
 Depends:
- ${misc:Depends}, ${shlibs:Depends}, nvidia-firmware-560-560.35.03
+ ${misc:Depends}, ${shlibs:Depends}
 Replaces:
  nvidia-dkms-560 (<< 390.48-0ubuntu3~), nvidia-kernel-common
 Description: Shared files used with the kernel module
@@ -224,10 +224,6 @@ Description: Shared files used with the kernel module
 
 Package: nvidia-firmware-560-560.35.03
 Architecture: amd64 arm64
-Breaks:
- nvidia-firmware-#OTHER_FLAVOUR#-560.35.03
-Replaces:
- nvidia-firmware-#OTHER_FLAVOUR#-560.35.03
 Depends:
  ${misc:Depends}
 Description: Firmware files used by the kernel module
