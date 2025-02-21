@@ -435,6 +435,7 @@ Depends:
  dkms,
  nvidia-kernel-source-570-open (>= 570.86.16),
  nvidia-kernel-common-570 (>= 570.86.16),
+ nvidia-firmware-570-570.86.16,
  ${misc:Depends}, ${shlibs:Depends}
 Description: NVIDIA DKMS package (open kernel module)
  This package builds the open NVIDIA kernel module needed by the userspace
