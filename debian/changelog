@@ -1,3 +1,9 @@
+nvidia-graphics-drivers-570 (570.172.08-1pop1) jammy; urgency=medium
+
+  * https://www.nvidia.com/en-us/drivers/details/249194/
+
+ -- Michael Murphy <michael@mmurphy.dev>  Mon, 21 Jul 2025 17:37:52 +0200
+
 nvidia-graphics-drivers-570 (570.153.02-1pop1) jammy; urgency=medium
 
   * https://www.nvidia.com/en-us/drivers/details/245669/
