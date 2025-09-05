@@ -156,6 +156,13 @@ override_dh_clean: regen-from-templates
 
 override_dh_auto_configure: prepare regen-from-templates
 
+override_dh_builddeb:
+ifeq ($(DEB_HOST_ARCH),i386)
+	dh_builddeb -- -Zzstd -z3
+else
+	dh_builddeb
+endif
+
 override_dh_compress:
 	dh_compress -Xsupported-gpus.json
 
