@@ -12,7 +12,7 @@ Original author: Timo Aaltonen
  4 files changed, 59 insertions(+), 3 deletions(-)
 
 diff --git a/conftest.sh b/conftest.sh
-index f6a560d..4af2607 100755
+index f6a555d..4af2607 100755
 --- a/conftest.sh
 +++ b/conftest.sh
 @@ -2216,6 +2216,47 @@ compile_test() {

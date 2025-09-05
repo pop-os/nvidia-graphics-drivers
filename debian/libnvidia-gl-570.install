@@ -1,5 +1,8 @@
 NVIDIA-Linux/_nvngx.dll                                       usr/lib/x86_64-linux-gnu/nvidia/wine
 NVIDIA-Linux/nvngx.dll                                        usr/lib/x86_64-linux-gnu/nvidia/wine
+NVIDIA-Linux/nvidia-pcc                                       usr/bin
+NVIDIA-Linux/libnvidia-vksc-core.so.570.172.08                 usr/lib/x86_64-linux-gnu
+NVIDIA-Linux/nvidia_icd_vksc.json                             usr/share/vulkansc/icd.d
 NVIDIA-Linux/10_nvidia.json                                usr/share/glvnd/egl_vendor.d
 NVIDIA-Linux/15_nvidia_gbm.json                            usr/share/egl/egl_external_platform.d
 NVIDIA-Linux/20_nvidia_xlib.json                           usr/share/egl/egl_external_platform.d
@@ -30,7 +33,6 @@ NVIDIA-Linux/nvoptix.bin                                   usr/share/nvidia
 #NVIDIA-Linux/32/libGLESv1_CM_nvidia.so.570.172.08               usr/lib/x86_64-linux-gnu
 #NVIDIA-Linux/32/libGLESv2_nvidia.so.570.172.08                  usr/lib/x86_64-linux-gnu
 #NVIDIA-Linux/32/libGLX_nvidia.so.570.172.08                     usr/lib/x86_64-linux-gnu
-#NVIDIA-Linux/32/libnvidia-egl-gbm.so.1.1.2                     usr/lib/x86_64-linux-gnu
 #NVIDIA-Linux/32/libnvidia-eglcore.so.570.172.08                 usr/lib/x86_64-linux-gnu
 #NVIDIA-Linux/32/libnvidia-glcore.so.570.172.08                  usr/lib/x86_64-linux-gnu
 #NVIDIA-Linux/32/libnvidia-glsi.so.570.172.08                    usr/lib/x86_64-linux-gnu
@@ -39,3 +41,4 @@ NVIDIA-Linux/nvoptix.bin                                   usr/share/nvidia
 #NVIDIA-Linux/32/libnvidia-tls.so.570.172.08                     usr/lib/x86_64-linux-gnu
 #NVIDIA-Linux/32/libnvidia-egl-xcb.so.1.0.2                     usr/lib/x86_64-linux-gnu
 #NVIDIA-Linux/32/libnvidia-egl-xlib.so.1.0.2                    usr/lib/x86_64-linux-gnu
+#NVIDIA-Linux/32/libnvidia-egl-gbm.so.1.1.2                     usr/lib/x86_64-linux-gnu
