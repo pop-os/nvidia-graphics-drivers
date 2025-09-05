@@ -1,5 +1,5 @@
 #!/bin/sh
-# postinst script for nvidia-kernel-common-535
+# postinst script for nvidia-kernel-common-550
 #
 # see: dh_installdeb(1)
 #
@@ -96,6 +96,12 @@ case "$1" in
                 # This can fail when dealing with a chroot see LP: #556653
                 /usr/sbin/update-initramfs -u -k $CURRENT_KERNEL
             fi
+        fi
+
+        OS_MAJOR=$(awk -F'[=."]' '/^VERSION_ID=/ { print $3; }' /etc/os-release)
+        
+        if [ "$OS_MAJOR" -ge "24" ]; then
+            echo "options nvidia NVreg_PreserveVideoMemoryAllocations=1 NVreg_EnableS0ixPowerManagement=1" > /lib/modprobe.d/nvidia-graphics-drivers-sleep.conf
         fi
         ;;
 
