@@ -33,9 +33,7 @@ Package: nvidia-driver-570
 Architecture: amd64 arm64
 Depends:
  libnvidia-gl-570 (= ${binary:Version}),
- nvidia-dkms-570 (<= 570.172.08-1),
  nvidia-dkms-570 (>= 570.172.08),
- nvidia-kernel-common-570 (<= 570.172.08-1),
  nvidia-kernel-common-570 (>= 570.172.08),
  nvidia-kernel-source-570 (= ${binary:Version}),
  libnvidia-compute-570 (= ${binary:Version}),
@@ -91,9 +89,7 @@ Provides:
  nvidia-dkms-kernel
 Depends:
  dkms,
- nvidia-kernel-source-570 (<= 570.172.08-1),
  nvidia-kernel-source-570 (>= 570.172.08),
- nvidia-kernel-common-570 (<= 570.172.08-1),
  nvidia-kernel-common-570 (>= 570.172.08),
  nvidia-firmware-570-570.172.08,
  ${misc:Depends}, ${shlibs:Depends}
@@ -181,7 +177,6 @@ Description: NVIDIA compute utilities
 Package: nvidia-headless-no-dkms-570
 Architecture: amd64 arm64
 Depends:
- nvidia-kernel-common-570 (<= 570.172.08-1),
  nvidia-kernel-common-570 (>= 570.172.08),
  nvidia-kernel-source-570 (= ${binary:Version}),
  libnvidia-compute-570 (= ${binary:Version}),
@@ -386,9 +381,7 @@ Package: nvidia-driver-570-open
 Architecture: amd64 arm64
 Depends:
  libnvidia-gl-570 (= ${binary:Version}),
- nvidia-dkms-570-open (<= 570.172.08-1),
  nvidia-dkms-570-open (>= 570.172.08),
- nvidia-kernel-common-570 (<= 570.172.08-1),
  nvidia-kernel-common-570 (>= 570.172.08),
  nvidia-kernel-source-570-open (= ${binary:Version}),
  libnvidia-compute-570 (= ${binary:Version}),
@@ -446,9 +439,7 @@ Provides:
  nvidia-dkms-kernel
 Depends:
  dkms,
- nvidia-kernel-source-570-open (<= 570.172.08-1),
  nvidia-kernel-source-570-open (>= 570.172.08),
- nvidia-kernel-common-570 (<= 570.172.08-1),
  nvidia-kernel-common-570 (>= 570.172.08),
  ${misc:Depends}, ${shlibs:Depends}
 Description: NVIDIA DKMS package (open kernel module)
@@ -461,7 +452,6 @@ Description: NVIDIA DKMS package (open kernel module)
 Package: nvidia-headless-no-dkms-570-open
 Architecture: amd64 arm64
 Depends:
- nvidia-kernel-common-570 (<= 570.172.08-1),
  nvidia-kernel-common-570 (>= 570.172.08),
  nvidia-kernel-source-570-open (= ${binary:Version}),
  libnvidia-compute-570 (= ${binary:Version}),
