@@ -1,95 +1,12 @@
-nvidia-graphics-drivers-570 (570.172.08-1pop1) jammy; urgency=medium
+nvidia-graphics-drivers-580 (580.76.05-1pop2) jammy; urgency=medium
 
-  * https://www.nvidia.com/en-us/drivers/details/249194/
+  * Replace 565, 570, and 575
 
- -- Michael Murphy <michael@mmurphy.dev>  Mon, 21 Jul 2025 17:37:52 +0200
+ -- Michael Murphy <michael@mmurphy.dev>  Tue, 16 Sep 2025 16:46:13 +0200
 
-nvidia-graphics-drivers-570 (570.153.02-1pop1) jammy; urgency=medium
+nvidia-graphics-drivers-580 (580.76.05-1pop1) jammy; urgency=medium
 
-  * https://www.nvidia.com/en-us/drivers/details/245669/
+  * https://www.nvidia.com/en-us/drivers/details/252613/
 
- -- Michael Aaron Murphy <michael@mmurphy.dev>  Tue, 20 May 2025 18:35:40 +0200
+ -- Michael Murphy <michael@mmurphy.dev>  Thu, 28 Aug 2025 20:58:16 +0200
 
-nvidia-graphics-drivers-570 (570.133.07-1pop1) jammy; urgency=medium
-
-  * https://www.nvidia.com/en-us/drivers/details/242273/
-
- -- Michael Aaron Murphy <michael@mmurphy.dev>  Mon, 24 Mar 2025 14:10:17 +0100
-
-nvidia-graphics-drivers-570 (570.124.04-1pop1) jammy; urgency=medium
-
-  * https://www.nvidia.com/en-us/drivers/details/241275/
-
- -- Michael Aaron Murphy <michael@mmurphy.dev>  Mon, 03 Mar 2025 15:22:51 +0100
-
-nvidia-graphics-drivers-570 (570.86.16-1pop1) jammy; urgency=medium
-
-  * https://www.nvidia.com/en-us/drivers/details/240605/
-
- -- Michael Aaron Murphy <michael@mmurphy.dev>  Thu, 30 Jan 2025 19:11:18 +0100
-
-nvidia-graphics-drivers-565 (565.77-1pop0ubuntu1) jammy; urgency=medium
-
-  * https://www.nvidia.com/en-us/drivers/details/237587/
-
- -- Michael Aaron Murphy <michael@mmurphy.dev>  Fri, 06 Dec 2024 13:19:00 +0100
-
-nvidia-graphics-drivers-560 (560.35.03-1pop0) jammy; urgency=medium
-
-  * https://www.nvidia.com/en-us/drivers/details/230918/
-
- -- Michael Aaron Murphy <michael@mmurphy.dev>  Mon, 09 Sep 2024 17:04:23 +0200
-
-nvidia-graphics-drivers-555 (555.58.02-1pop0) jammy; urgency=medium
-
-  * https://www.nvidia.com/Download/driverResults.aspx/228410/en-us/
-
- -- Michael Aaron Murphy <michael@mmurphy.dev>  Tue, 02 Jul 2024 16:56:14 +0200
-
-nvidia-graphics-drivers-555 (555.58-1pop0) jammy; urgency=medium
-
-  * https://www.nvidia.com/download/driverResults.aspx/228214/en-us/
-
- -- Michael Aaron Murphy <michael@mmurphy.dev>  Sat, 29 Jun 2024 05:37:45 +0200
-
-nvidia-graphics-drivers-555 (555.42.02-1pop0ubuntu1) jammy; urgency=medium
-
-  * https://www.nvidia.co.uk/download/driverResults.aspx/224793/en-us/
-
- -- Michael Aaron Murphy <michael@mmurphy.dev>  Tue, 21 May 2024 17:04:14 +0200
-
-nvidia-graphics-drivers-550 (550.67-1pop0) jammy; urgency=medium
-
-   * https://www.nvidia.com/Download/driverResults.aspx/223426/en-us/
-
- -- Michael Aaron Murphy <michael@mmurphy.dev>  Wed, 20 Mar 2024 15:47:08 +0100
-
-nvidia-graphics-drivers-550 (550.54.14-1pop0) jammy; urgency=medium
-
-  * https://www.nvidia.com/Download/driverResults.aspx/218826/en-us/
-
- -- Michael Murphy <michael@mmurphy.dev>  Fri, 23 Feb 2024 19:06:57 +0100
-
-nvidia-graphics-drivers-550 (550.40.07-1pop0) jammy; urgency=medium
-
-  * https://www.nvidia.com/download/driverResults.aspx/218153/en-us/
-
- -- Michael Murphy <michael@mmurphy.dev>  Thu, 25 Jan 2024 20:38:18 +0100
-
-nvidia-graphics-drivers-545 (545.29.06-1pop0) jammy; urgency=medium
-
-  * https://www.nvidia.com/Download/driverResults.aspx/216530/en-us/
-
- -- Michael Murphy <michael@mmurphy.dev>  Wed, 22 Nov 2023 21:40:18 +0100
-
-nvidia-graphics-drivers-545 (545.29.02-1pop0) jammy; urgency=medium
-
-  * https://www.nvidia.com/download/driverResults.aspx/214100/en-us/
-
- -- Michael Murphy <michael@mmurphy.dev>  Tue, 31 Oct 2023 20:59:25 +0100
-
-nvidia-graphics-drivers-545 (545.23.06-1pop0) focal; urgency=medium
-
-  * https://www.nvidia.com/download/driverResults.aspx/212964/en-us/
-
- -- Michael Murphy <michael@mmurphy.dev>  Wed, 18 Oct 2023 20:10:56 +0200

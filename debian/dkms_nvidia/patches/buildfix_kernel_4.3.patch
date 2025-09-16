@@ -1,4 +1,4 @@
-From 29130678d44c8ec1e2575608678ccbda26855cff Mon Sep 17 00:00:00 2001
+From 29130678d44c8ec1e2580608678ccbda26855cff Mon Sep 17 00:00:00 2001
 From: Alberto Milone <alberto.milone@canonical.com>
 Date: Thu, 29 Oct 2015 12:58:45 +0100
 Subject: [PATCH 1/1] Add support for Linux 4.3

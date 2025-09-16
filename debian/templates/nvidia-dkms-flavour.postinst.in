@@ -1,5 +1,5 @@
 #!/bin/sh
-# postinst script for nvidia-dkms-550
+# postinst script for nvidia-dkms-535
 #
 # see: dh_installdeb(1)
 #
@@ -34,7 +34,7 @@ esac
 _is_kernel_name_correct() {
     CORRECT="no"
     KERNEL_NAME=$1
- 
+
     for kernel in /boot/config-*; do
         [ -f "$kernel" ] || continue
         KERNEL=${kernel#*-}
@@ -133,15 +133,21 @@ case "$1" in
 
         # Enable any quirks for the driver
         if [ `which quirks-handler` ]; then
-           quirks-handler -e $PACKAGE_NAME -v
+            quirks-handler -e $PACKAGE_NAME -v
         fi
 
         # Build the kernel module
         /usr/lib/dkms/common.postinst $PACKAGE_NAME $CVERSION /usr/share/$PACKAGE_NAME $ARCH $2
 
+        # Re-enable these services
+        /bin/systemctl enable nvidia-persistenced || true
+        /bin/systemctl enable nvidia-powerd || true
+        /bin/systemctl enable nvidia-suspend || true
+        /bin/systemctl enable nvidia-hibernate || true
+        /bin/systemctl enable nvidia-resume || true
+
         # Show the reboot requirement notification.
         touch /var/run/reboot-required
-        exit $?
         ;;
 
     abort-upgrade|abort-remove|abort-deconfigure)

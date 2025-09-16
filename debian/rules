@@ -19,14 +19,7 @@ version_major		 = $(firstword $(subst ., ,$(version)))
 # system libdir
 libdir			?= usr/lib/$(DEB_HOST_MULTIARCH)
 
-last_suffix            := $(lastword $(subst -, ,$(DEB_SOURCE)))
-ifeq ($(last_suffix),server)
-flavour := $(version_major)-server
-other_flavour := $(version_major)
-else
 flavour := $(version_major)
-other_flavour := $(version_major)-server
-endif
 pkg_meta         := nvidia-driver-$(flavour)
 pkg_meta_open    := $(pkg_meta)-open
 pkg_driver       := nvidia-$(flavour)
@@ -115,7 +108,7 @@ NVIDIA-Linux-%:
 # Unpack all architectures, we may need files from all of them.
 unpack-stamp:
 	dh_testdir
-	QUILT_PATCHES=debian/patches QUILT_SERIES=series-postunpack quilt --quiltrc /dev/null push -a || test $$? = 2
+	#QUILT_PATCHES=debian/patches QUILT_SERIES=series-postunpack quilt --quiltrc /dev/null push -a || test $$? = 2
 	ls -al
 	touch $@
 
@@ -156,13 +149,6 @@ override_dh_clean: regen-from-templates
 
 override_dh_auto_configure: prepare regen-from-templates
 
-override_dh_builddeb:
-ifeq ($(DEB_HOST_ARCH),i386)
-	dh_builddeb -- -Zzstd -z3
-else
-	dh_builddeb
-endif
-
 override_dh_compress:
 	dh_compress -Xsupported-gpus.json
 
@@ -179,14 +165,13 @@ endif
 
 	dh_install -p nvidia-compute-utils-$(version_major)
 	mkdir -p $(CURDIR)/debian/nvidia-compute-utils-$(version_major)/lib/systemd
-	dh_installsystemd --name=nvidia-persistenced --no-start --no-stop-on-upgrade --no-restart-after-upgrade
+	dh_installsystemd --name=nvidia-persistenced
 	dh_install -p nvidia-kernel-common-$(version_major)
 
 	mkdir -p $(CURDIR)/debian/nvidia-kernel-common-$(version_major)/lib/systemd
-	dh_installsystemd --name=nvidia-hibernate --no-start --no-stop-on-upgrade --no-restart-after-upgrade
-	dh_installsystemd --name=nvidia-powerd --no-start --no-stop-on-upgrade --no-restart-after-upgrade
-	dh_installsystemd --name=nvidia-resume --no-start --no-stop-on-upgrade --no-restart-after-upgrade
-	dh_installsystemd --name=nvidia-suspend --no-start --no-stop-on-upgrade --no-restart-after-upgrade
+	dh_installsystemd --name=nvidia-hibernate
+	dh_installsystemd --name=nvidia-resume
+	dh_installsystemd --name=nvidia-suspend
 
 	dh_install
 
@@ -194,9 +179,24 @@ override_dh_installinit:
 	dh_installinit --noscripts
 
 override_dh_shlibdeps:
-	LD_LIBRARY_PATH=/$(libdir):$(LD_LIBRARY_PATH) dh_shlibdeps -Xlibnvidia-pkcs11.so
+	LD_LIBRARY_PATH=/$(libdir):$(LD_LIBRARY_PATH) dh_shlibdeps --exclude=libnvidia-compute-535
 
-override_dh_installsystemd:
+override_dh_builddeb:
+	dh_builddeb -- -Zzstd -z3
+
+# Do not run dh_strip here.  The NVIDIA license says:
+#
+#     2.1.2 Linux/FreeBSD Exception.  Notwithstanding the foregoing terms of
+#     Section 2.1.1, SOFTWARE designed exclusively for use on the Linux or
+#     FreeBSD operating systems, or other operating systems derived from the
+#     source code to these operating systems, may be copied and
+#     redistributed, provided that the binary files thereof are not modified
+#     in any way (except for unzipping of compressed files).
+#
+# Stripping the binary modules would constitute modifying the binary files
+# in a way other than unzipping of compressed files.
+override_dh_strip:
+override_dh_strip_nondeterminism:
 
 ############################################################################
 
@@ -231,7 +231,6 @@ regen-from-templates:
 			-e "s|#PPC64EL_EXCLUDED#|$(ppc64el_excluded)|g" \
 			-e "s|#NVEXCLUDEMODULES#|$(DKMS_disabled_modules)|g" \
 			-e "s|#FLAVOUR#|$(flavour)|g" \
-			-e "s|#OTHER_FLAVOUR#|$(other_flavour)|g" \
 			-e "s|#DRIVERNAME#|$(pkg_driver)|g" \
 			-e "s|#VERSION#|$(version)|g" \
 			-e "s|#DEBIAN_VERSION#|$(debian_version)|g" \
@@ -252,7 +251,6 @@ TARBALL.empty		?= $(TARBALL)
 
 # $1 = arch
 get_download_url	 = $(or $(HTTPURL_PREFIX_$(strip $1)),$(HTTPURL_PREFIX))/$(HTTPURL_ARCHDIR_$(strip $1))/$(NVIDIA_RELEASE)/$(NVIDIA_FILENAME_$(strip $1))
-get_kern_download_url	= $(or $(HTTPURL_PREFIX_$(strip $1)),$(HTTPURL_PREFIX))/$(NVIDIA_FILENAME_$(strip $1))
 get_origdir		 = $(or $(ORIGDIR.$(strip $1)),$(ORIGDIR)-$(strip $1))
 get_tarball		 = $(or $(TARBALL.$(strip $1)),$(TARBALL_BASE)-$(strip $1)$(TARBALL_SUFFIX))
 
@@ -316,17 +314,8 @@ get-orig-source-prepare/%: get-orig-source-prepare
 	mkdir get-orig-source/$(call get_origdir,$*)
 
 get-orig-source-download/%: get-orig-source-prepare
-	# Use different a download function for kernelsrc
-	if [ -n "$(findstring NVIDIA,$(NVIDIA_FILENAME_$*))" ]; then \
-		ln -v $(CACHE)/$(NVIDIA_FILENAME_$*) get-orig-source/ 2>/dev/null || \
-		    wget $(call get_download_url,$*) -P get-orig-source/ || \
-		    cp $*/$(NVIDIA_FILENAME_$*) get-orig-source/ ; \
-	else \
-		ln -v $(CACHE)/$(NVIDIA_FILENAME_$*) get-orig-source/ 2>/dev/null || \
-		    wget $(call get_kern_download_url,$*) -P get-orig-source/ || \
-		    cp $*/$(NVIDIA_FILENAME_$*) get-orig-source/ ; \
-	fi
-
+	ln -v $(CACHE)/$(NVIDIA_FILENAME_$*) get-orig-source/ 2>/dev/null || \
+		wget $(call get_download_url,$*) -P get-orig-source/ || cp $*/$(NVIDIA_FILENAME_$*) get-orig-source/
 	if [ -d $(CACHE) ] && [ ! -f $(CACHE)/$(NVIDIA_FILENAME_$*) ]; then \
 		ln -v get-orig-source/$(NVIDIA_FILENAME_$*) $(CACHE) ; fi
 
@@ -342,7 +331,7 @@ get-orig-source-pack/%: get-orig-source-files/%
 	@set -e -x ; \
 	    cd get-orig-source ; \
 	    tar cv \
-	        --clamp-mtime --mtime="@123456789" \
+	        --clamp-mtime --mtime="./$(call get_origdir,$*).stamp" \
 	        --sort=name \
 		--owner=root --group=src \
 		$(call get_origdir,$*) \
