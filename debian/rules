@@ -156,6 +156,7 @@ override_dh_clean: regen-from-templates
 
 override_dh_auto_configure: prepare regen-from-templates
 
+# Fix for i386 allocation failure.
 override_dh_builddeb:
 ifeq ($(DEB_HOST_ARCH),i386)
 	dh_builddeb -- -Zzstd -z3
@@ -252,7 +253,6 @@ TARBALL.empty		?= $(TARBALL)
 
 # $1 = arch
 get_download_url	 = $(or $(HTTPURL_PREFIX_$(strip $1)),$(HTTPURL_PREFIX))/$(HTTPURL_ARCHDIR_$(strip $1))/$(NVIDIA_RELEASE)/$(NVIDIA_FILENAME_$(strip $1))
-get_kern_download_url	= $(or $(HTTPURL_PREFIX_$(strip $1)),$(HTTPURL_PREFIX))/$(NVIDIA_FILENAME_$(strip $1))
 get_origdir		 = $(or $(ORIGDIR.$(strip $1)),$(ORIGDIR)-$(strip $1))
 get_tarball		 = $(or $(TARBALL.$(strip $1)),$(TARBALL_BASE)-$(strip $1)$(TARBALL_SUFFIX))
 

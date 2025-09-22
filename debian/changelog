@@ -1,3 +1,15 @@
+nvidia-graphics-drivers-580 (580.82.09-1pop1) jammy; urgency=medium
+
+  * https://www.nvidia.com/en-us/drivers/details/253003/
+
+ -- Michael Murphy <michael@mmurphy.dev>  Fri, 05 Sep 2025 19:23:25 +0200
+
+nvidia-graphics-drivers-580 (580.72.07-1pop1) jammy; urgency=medium
+
+  * https://www.nvidia.com/en-us/drivers/details/252613/
+
+ -- Michael Murphy <michael@mmurphy.dev>  Thu, 28 Aug 2025 20:58:16 +0200
+
 nvidia-graphics-drivers-570 (570.172.08-1pop1) jammy; urgency=medium
 
   * https://www.nvidia.com/en-us/drivers/details/249194/
