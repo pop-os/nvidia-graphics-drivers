@@ -38,6 +38,7 @@ Switchable graphics laptops can render with either the CPU-integrated GPU or the
 
 ### Hybrid mode tests
 
+- [ ] `/usr/share/doc/nvidia-kernel-common-VERSION/supported-gpus.json` is present after installing the driver and rebooting.
 - [ ] Laptop suspends and resumes (works with a bluetooth device paired)
 - [ ] `nvidia-smi` correctly reports the GPU's status
 - [ ] DisplayPort (mDP and DP over USB-C) outputs (including sound) work as expected
