@@ -494,6 +494,14 @@ Description: Transitional package for nvidia-driver-#FLAVOUR#
  This is a transitional package for nvidia-driver-#FLAVOUR#, and can be
  safely removed after the installation is complete.
 
+Package: nvidia-driver-575-open
+Architecture: amd64 arm64
+Depends: nvidia-driver-#FLAVOUR#-open
+Multi-Arch: foreign
+Description: Transitional package for nvidia-driver-#FLAVOUR#-open
+ This is a transitional package for nvidia-driver-#FLAVOUR#-open, and can be
+ safely removed after the installation is complete.
+
 Package: nvidia-kernel-source-575
 Architecture: amd64 arm64
 Depends: nvidia-kernel-source-#FLAVOUR#
@@ -502,12 +510,28 @@ Description: Transitional package for nvidia-kernel-source-#FLAVOUR#
  This is a transitional package for nvidia-kernel-source-#FLAVOUR#, and can be
  safely removed after the installation is complete.
 
+Package: nvidia-kernel-source-575-open
+Architecture: amd64 arm64
+Depends: nvidia-kernel-source-#FLAVOUR#-open
+Multi-Arch: foreign
+Description: Transitional package for nvidia-kernel-source-#FLAVOUR#-open
+ This is a transitional package for nvidia-kernel-source-#FLAVOUR#-open, and can be
+ safely removed after the installation is complete.
+
 Package: nvidia-dkms-575
 Architecture: amd64 arm64
 Depends: nvidia-dkms-#FLAVOUR#
 Multi-Arch: foreign
 Description: Transitional package for nvidia-dkms-#FLAVOUR#
  This is a transitional package for nvidia-dkms-#FLAVOUR#, and can be
+ safely removed after the installation is complete.
+
+Package: nvidia-dkms-575-open
+Architecture: amd64 arm64
+Depends: nvidia-dkms-#FLAVOUR#-open
+Multi-Arch: foreign
+Description: Transitional package for nvidia-dkms-#FLAVOUR#-open
+ This is a transitional package for nvidia-dkms-#FLAVOUR#-open, and can be
  safely removed after the installation is complete.
 
 Package: nvidia-utils-575
@@ -632,6 +656,14 @@ Description: Transitional package for nvidia-driver-#FLAVOUR#
  This is a transitional package for nvidia-driver-#FLAVOUR#, and can be
  safely removed after the installation is complete.
 
+Package: nvidia-driver-570-open
+Architecture: amd64 arm64
+Depends: nvidia-driver-#FLAVOUR#-open
+Multi-Arch: foreign
+Description: Transitional package for nvidia-driver-#FLAVOUR#-open
+ This is a transitional package for nvidia-driver-#FLAVOUR#-open, and can be
+ safely removed after the installation is complete.
+
 Package: nvidia-kernel-source-570
 Architecture: amd64 arm64
 Depends: nvidia-kernel-source-#FLAVOUR#
@@ -640,12 +672,28 @@ Description: Transitional package for nvidia-kernel-source-#FLAVOUR#
  This is a transitional package for nvidia-kernel-source-#FLAVOUR#, and can be
  safely removed after the installation is complete.
 
+Package: nvidia-kernel-source-570-open
+Architecture: amd64 arm64
+Depends: nvidia-kernel-source-#FLAVOUR#-open
+Multi-Arch: foreign
+Description: Transitional package for nvidia-kernel-source-#FLAVOUR#-open
+ This is a transitional package for nvidia-kernel-source-#FLAVOUR#-open, and can be
+ safely removed after the installation is complete.
+
 Package: nvidia-dkms-570
 Architecture: amd64 arm64
 Depends: nvidia-dkms-#FLAVOUR#
 Multi-Arch: foreign
 Description: Transitional package for nvidia-dkms-#FLAVOUR#
  This is a transitional package for nvidia-dkms-#FLAVOUR#, and can be
+ safely removed after the installation is complete.
+
+Package: nvidia-dkms-570-open
+Architecture: amd64 arm64
+Depends: nvidia-dkms-#FLAVOUR#-open
+Multi-Arch: foreign
+Description: Transitional package for nvidia-dkms-#FLAVOUR#
+ This is a transitional package for nvidia-dkms-#FLAVOUR#-open, and can be
  safely removed after the installation is complete.
 
 Package: nvidia-utils-570

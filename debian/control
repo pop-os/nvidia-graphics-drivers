@@ -494,6 +494,14 @@ Description: Transitional package for nvidia-driver-580
  This is a transitional package for nvidia-driver-580, and can be
  safely removed after the installation is complete.
 
+Package: nvidia-driver-575-open
+Architecture: amd64 arm64
+Depends: nvidia-driver-580-open
+Multi-Arch: foreign
+Description: Transitional package for nvidia-driver-580-open
+ This is a transitional package for nvidia-driver-580-open, and can be
+ safely removed after the installation is complete.
+
 Package: nvidia-kernel-source-575
 Architecture: amd64 arm64
 Depends: nvidia-kernel-source-580
@@ -502,12 +510,28 @@ Description: Transitional package for nvidia-kernel-source-580
  This is a transitional package for nvidia-kernel-source-580, and can be
  safely removed after the installation is complete.
 
+Package: nvidia-kernel-source-575-open
+Architecture: amd64 arm64
+Depends: nvidia-kernel-source-580-open
+Multi-Arch: foreign
+Description: Transitional package for nvidia-kernel-source-580-open
+ This is a transitional package for nvidia-kernel-source-580-open, and can be
+ safely removed after the installation is complete.
+
 Package: nvidia-dkms-575
 Architecture: amd64 arm64
 Depends: nvidia-dkms-580
 Multi-Arch: foreign
 Description: Transitional package for nvidia-dkms-580
  This is a transitional package for nvidia-dkms-580, and can be
+ safely removed after the installation is complete.
+
+Package: nvidia-dkms-575-open
+Architecture: amd64 arm64
+Depends: nvidia-dkms-580-open
+Multi-Arch: foreign
+Description: Transitional package for nvidia-dkms-580-open
+ This is a transitional package for nvidia-dkms-580-open, and can be
  safely removed after the installation is complete.
 
 Package: nvidia-utils-575
@@ -632,6 +656,14 @@ Description: Transitional package for nvidia-driver-580
  This is a transitional package for nvidia-driver-580, and can be
  safely removed after the installation is complete.
 
+Package: nvidia-driver-570-open
+Architecture: amd64 arm64
+Depends: nvidia-driver-580-open
+Multi-Arch: foreign
+Description: Transitional package for nvidia-driver-580-open
+ This is a transitional package for nvidia-driver-580-open, and can be
+ safely removed after the installation is complete.
+
 Package: nvidia-kernel-source-570
 Architecture: amd64 arm64
 Depends: nvidia-kernel-source-580
@@ -640,12 +672,28 @@ Description: Transitional package for nvidia-kernel-source-580
  This is a transitional package for nvidia-kernel-source-580, and can be
  safely removed after the installation is complete.
 
+Package: nvidia-kernel-source-570-open
+Architecture: amd64 arm64
+Depends: nvidia-kernel-source-580-open
+Multi-Arch: foreign
+Description: Transitional package for nvidia-kernel-source-580-open
+ This is a transitional package for nvidia-kernel-source-580-open, and can be
+ safely removed after the installation is complete.
+
 Package: nvidia-dkms-570
 Architecture: amd64 arm64
 Depends: nvidia-dkms-580
 Multi-Arch: foreign
 Description: Transitional package for nvidia-dkms-580
  This is a transitional package for nvidia-dkms-580, and can be
+ safely removed after the installation is complete.
+
+Package: nvidia-dkms-570-open
+Architecture: amd64 arm64
+Depends: nvidia-dkms-580-open
+Multi-Arch: foreign
+Description: Transitional package for nvidia-dkms-580
+ This is a transitional package for nvidia-dkms-580-open, and can be
  safely removed after the installation is complete.
 
 Package: nvidia-utils-570
