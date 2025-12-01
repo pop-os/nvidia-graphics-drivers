@@ -1,0 +1,11 @@
+#I386_EXCLUDED##LIBDIR#/libcudadebugger.so.#VERSION#        #LIBDIR#/libcudadebugger.so.1
+#LIBDIR#/libcuda.so.#VERSION#                               #LIBDIR#/libcuda.so.1
+#LIBDIR#/libcuda.so.1                                       #LIBDIR#/libcuda.so
+#LIBDIR#/libnvidia-ml.so.#VERSION#                          #LIBDIR#/libnvidia-ml.so.1
+#LIBDIR#/libnvidia-ml.so.1                                  #LIBDIR#/libnvidia-ml.so
+#LIBDIR#/libnvidia-nvvm.so.#VERSION#                        #LIBDIR#/libnvidia-nvvm.so.4
+#LIBDIR#/libnvidia-nvvm.so.4                                #LIBDIR#/libnvidia-nvvm.so
+#LIBDIR#/libnvidia-nvvm70.so.4                              #LIBDIR#/libnvidia-nvvm70.so
+#LIBDIR#/libnvidia-opencl.so.#VERSION#                      #LIBDIR#/libnvidia-opencl.so.1
+#LIBDIR#/libnvidia-ptxjitcompiler.so.#VERSION#              #LIBDIR#/libnvidia-ptxjitcompiler.so.1
+#LIBDIR#/libnvidia-ptxjitcompiler.so.1                      #LIBDIR#/libnvidia-ptxjitcompiler.so
