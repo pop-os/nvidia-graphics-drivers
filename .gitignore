@@ -1,3 +1,5 @@
+amd64
+arm64
 debian/device-create
 debian/dkms.conf
 LICENSE.txt
