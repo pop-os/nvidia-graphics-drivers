@@ -4,8 +4,14 @@ help:
     just --list
 
 # Fetch amd64 and arm64 NVIDIA drivers and validate their checksums.
-update: (fetch 'x86_64' 'amd64' '8020f5dfd3ee88aee7a38990d0c3d2afe54751e9a170ba9eadd7ea670138ecd7') \
+update: clean \
+    (fetch 'x86_64' 'amd64' '8020f5dfd3ee88aee7a38990d0c3d2afe54751e9a170ba9eadd7ea670138ecd7') \
     (fetch 'aarch64' 'arm64' '798718543e5768d6e9e243ee7bc7daff3520aeddaf1dd8e7e8340c603974b90b')
+
+clean:
+    find amd64/*.run ! -wholename '*{{ version }}.run' -exec rm {} \;
+    find arm64/*.run ! -wholename '*{{ version }}.run' -exec rm {} \;
+    rm -rf .pc NVIDIA-Linux* LICENSE.txt
 
 # Construct the `target-dst` variable and then run the `pre-validate`, `download`, and `post-validate` recipes.
 [private]
