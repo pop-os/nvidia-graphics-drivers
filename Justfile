@@ -9,6 +9,7 @@ update: clean \
     (fetch 'aarch64' 'arm64' '798718543e5768d6e9e243ee7bc7daff3520aeddaf1dd8e7e8340c603974b90b')
 
 clean:
+    mkdir -p amd64 arm64
     find amd64/*.run ! -wholename '*{{ version }}.run' -exec rm {} \;
     find arm64/*.run ! -wholename '*{{ version }}.run' -exec rm {} \;
     rm -rf .pc NVIDIA-Linux* LICENSE.txt
