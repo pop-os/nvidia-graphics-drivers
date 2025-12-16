@@ -10,8 +10,8 @@ update: clean \
 
 clean:
     mkdir -p amd64 arm64
-    find amd64/*.run ! -wholename '*{{ version }}.run' -exec rm {} \;
-    find arm64/*.run ! -wholename '*{{ version }}.run' -exec rm {} \;
+    find amd64/*.run ! -wholename '*{{ version }}.run' -exec rm {} \; || true
+    find arm64/*.run ! -wholename '*{{ version }}.run' -exec rm {} \; || true
     rm -rf .pc NVIDIA-Linux* LICENSE.txt
 
 # Construct the `target-dst` variable and then run the `pre-validate`, `download`, and `post-validate` recipes.
