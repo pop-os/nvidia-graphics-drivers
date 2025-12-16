@@ -1,12 +1,11 @@
-version := '580.95.05'
+version := '580.119.02'
 
 help:
     just --list
 
 # Fetch amd64 and arm64 NVIDIA drivers and validate their checksums.
-update: \
-    (fetch 'x86_64' 'amd64' '849ef0ef8e842b9806b2cde9f11c1303d54f1a9a769467e4e5d961b2fe1182a7') \
-    (fetch 'aarch64' 'arm64' 'ccb4426e98a29367c60daf9df34c2a577655d54d5be25463ccd409b0b2e52029')
+update: (fetch 'x86_64' 'amd64' '8020f5dfd3ee88aee7a38990d0c3d2afe54751e9a170ba9eadd7ea670138ecd7') \
+    (fetch 'aarch64' 'arm64' '798718543e5768d6e9e243ee7bc7daff3520aeddaf1dd8e7e8340c603974b90b')
 
 # Construct the `target-dst` variable and then run the `pre-validate`, `download`, and `post-validate` recipes.
 [private]
@@ -17,20 +16,20 @@ fetch arch target-dir shasum: (post-validate arch shasum target-dir target-dir /
 download arch shasum target-dir target-dst: (pre-validate target-dst shasum)
     #!/bin/env bash
     set -euo pipefail
-    mkdir -p {{target-dir}}
-    ARCH=$(test {{arch}} = aarch64 && echo {{arch}} || echo Linux-{{arch}})
-    test -e {{target-dst}} || curl -o {{target-dst}} "https://us.download.nvidia.com/XFree86/${ARCH}/{{version}}/NVIDIA-Linux-{{arch}}-{{version}}.run"
+    mkdir -p {{ target-dir }}
+    ARCH=$(test {{ arch }} = aarch64 && echo {{ arch }} || echo Linux-{{ arch }})
+    test -e {{ target-dst }} || curl -o {{ target-dst }} "https://us.download.nvidia.com/XFree86/${ARCH}/{{ version }}/NVIDIA-Linux-{{ arch }}-{{ version }}.run"
 
 # Remove file on checksum mismatch and continue.
 [private]
 pre-validate target-dst shasum:
     #!/bin/env bash
     set -euo pipefail
-    test -e {{target-dst}} && (test '{{shasum}}' = "$(sha256sum {{target-dst}} | cut -d' ' -f1)" || rm {{target-dst}}) || true
+    test -e {{ target-dst }} && (test '{{ shasum }}' = "$(sha256sum {{ target-dst }} | cut -d' ' -f1)" || rm {{ target-dst }}) || true
 
 # Error on checksum mismatch or missing file.
 [private]
 post-validate arch shasum target-dir target-dst: (download arch shasum target-dir target-dst)
     #!/bin/env bash
     set -euo pipefail
-    test -e {{target-dst}} && test '{{shasum}}' = "$(sha256sum {{target-dst}} | cut -d' ' -f1)"
+    test -e {{ target-dst }} && test '{{ shasum }}' = "$(sha256sum {{ target-dst }} | cut -d' ' -f1)"

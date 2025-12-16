@@ -1,5 +1,13 @@
+LICENSE.txt
+NVIDIA-Linux*
 amd64
 arm64
+debian/*.debhelper
+debian/*.log
+debian/*.substvars
+debian/debhelper*
 debian/device-create
 debian/dkms.conf
-LICENSE.txt
+debian/files
+unpack-stamp
+.pc
