@@ -1,9 +1,11 @@
-NVIDIA-Linux/nvidia-application-profiles-580.126.18-key-documentation        usr/share/nvidia
-NVIDIA-Linux/nvidia-application-profiles-580.126.18-rc                       usr/share/nvidia
+NVIDIA-Linux/nvidia-application-profiles-580.159.03-key-documentation        usr/share/nvidia
+NVIDIA-Linux/nvidia-application-profiles-580.159.03-rc                       usr/share/nvidia
 NVIDIA-Linux/sandboxutils-filelist.json                                     usr/share/nvidia/files.d/
 # Allows full performance while streaming/recording: NVIDIA/open-gpu-kernel-modules#333
 # Based on https://github.com/Frogging-Family/nvidia-all/blob/master/system/cuda-no-stable-perf-limit
 debian/application-profiles/cuda-no-stable-perf-limit                       usr/share/nvidia/nvidia-application-profiles-rc.d/
+# https://niri-wm.github.io/niri/Nvidia.html
+debian/application-profiles/limit-buffer-pool-in-wayland-compositors    usr/share/nvidia/nvidia-application-profiles-rc.d/
 # Limit VRAM usage of desktop apps that don't benefit from it
 # Based on patch from NextWork123: https://github.com/CachyOS/CachyOS-PKGBUILDS/pull/873
 debian/application-profiles/vram-limit                                      usr/share/nvidia/nvidia-application-profiles-rc.d/
