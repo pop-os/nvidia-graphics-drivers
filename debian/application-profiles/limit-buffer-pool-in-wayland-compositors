@@ -1,0 +1,43 @@
+{
+    "rules": [
+        {
+            "pattern": {
+                "feature": "procname",
+                "matches": "cosmic-comp"
+            },
+            "profile": "Limit Free Buffer Pool On Wayland Compositors"
+        },
+        {
+            "pattern": {
+                "feature": "procname",
+                "matches": "kwin_wayland"
+            },
+            "profile": "Limit Free Buffer Pool On Wayland Compositors"
+        },
+        {
+            "pattern": {
+                "feature": "procname",
+                "matches": "gnome-shell"
+            },
+            "profile": "Limit Free Buffer Pool On Wayland Compositors"
+        },
+        {
+            "pattern": {
+                "feature": "procname",
+                "matches": "niri"
+            },
+            "profile": "Limit Free Buffer Pool On Wayland Compositors"
+        }
+    ],
+    "profiles": [
+        {
+            "name": "Limit Free Buffer Pool On Wayland Compositors",
+            "settings": [
+                {
+                    "key": "GLVidHeapReuseRatio",
+                    "value": 0
+                }
+            ]
+        }
+    ]
+}
