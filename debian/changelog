@@ -1,3 +1,9 @@
+nvidia-graphics-drivers-580 (580.173.02-1pop1) noble; urgency=medium
+
+  * https://www.nvidia.com/en-us/drivers/details/273160/
+
+ -- Michael Murphy <michael@mmurphy.dev>  Mon, 29 Jun 2026 22:26:53 +0200
+
 nvidia-graphics-drivers-580 (580.159.03-1pop1) noble; urgency=medium
 
   * https://www.nvidia.com/en-us/drivers/details/267258/
