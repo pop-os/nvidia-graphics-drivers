@@ -1,10 +1,11 @@
-version := '580.159.03'
+version := '580.173.02'
 
 help:
     just --list
 
 # Fetch amd64 and arm64 NVIDIA drivers and validate their checksums.
-update: clean (fetch 'x86_64' 'amd64' '32c85d99b0f640c9501f61b39ddad208fd0288d015c4fbc5fd0435c07783fa77') (fetch 'aarch64' 'arm64' '545445863f84183f4d4769bd35cc00dde269d97f7923d6dff2031b7b52a907d8')
+update: clean (fetch 'x86_64' 'amd64' '8d8eb9001e05a9a8a663d3d5d304feb64ef2844ee185ccdfd952786820f46e1b') \
+    (fetch 'aarch64' 'arm64' 'd65bd56087ef4d78f04a808da7883c35a5901c5fd37e95d150a7602eba97aa80')
 
 clean:
     mkdir -p amd64 arm64
